@@ -1,0 +1,61 @@
+/* Variables */
+
+:root {
+    --gap : 4vh;
+    --padding : 4vh;
+    --device : (
+        mobile: 480px;
+        tablet: 800px;
+        desktop: 1200px;
+        )
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 45px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: var(--padding);
+    border: 1vh solid black;
+}
+
+[class ^="block-"] {
+    display: flex;
+    flex-direction: row;
+    height: 100vh / 3 ;
+    gap: var(--gap);
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    [class ^="block-"] {
+        flex-direction: column;
+        height: 500px;
+    }
+}
+
+[class ^="box-"] {
+    display: flex;
+    background-color: rgb(149, 255, 202);
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    flex: 1 1 500px;
+    height: 40vh;
+    min-height: 150px;
+}
