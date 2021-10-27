@@ -85,9 +85,11 @@ h2 {
     flex-direction: column;
     padding: 5vh 7vh;
     background-color: rgb(214, 214, 214);
-    border: 2px solid rgb(150, 150, 150);
+    border: 1px solid rgb(26, 26, 26);
     max-width: 75vw;
     min-width: 600px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgb(26, 26, 26);;
 }
 
 .skillList {
@@ -103,6 +105,11 @@ li {
     align-items: center;
     font-size: 18px;
     margin-top: 7px;
+}
+
+.listWithBullets {
+    display: list-item;
+    margin-left: 40px;
 }
 
 .icon {
@@ -123,9 +130,9 @@ li {
     display: flex;
     flex-direction: column;
     gap: 4vh;
-    padding: 4vh;
-    border: 1vh solid black;
-    font-size: 45px;
+    padding: 4vh 25vh;
+    font-size: 40px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -139,14 +146,14 @@ li {
     display: flex;
     flex-direction: row;
     height: 100vh / 3 ;
-    gap: var(--gap);
+    gap: 4vh;
     justify-content: space-around;
 }
 
 [class ^="box-"] {
     display: flex;
     background-color: rgb(149, 255, 202);
-    border: 2px solid black;
+    border: 1px solid rgb(73, 73, 73);
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -164,6 +171,11 @@ button {
     background-color: rgb(133, 133, 235);
     border: none;
     border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 1px 1px 2px rgb(15, 15, 15);
+    cursor: pointer;
 }
 
 footer {
