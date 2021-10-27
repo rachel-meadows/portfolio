@@ -17,10 +17,19 @@ a {
     color: black;
 }
 
+.inlineLink {
+    color: darkblue;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
 }
 
 .navContainer {
@@ -44,6 +53,57 @@ body {
 #currentNavButton {
     background-color: rgb(133, 133, 235);
     font-weight: 700;
+}
+
+.bodyContainer, .moreAboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 3vh 10vh;
+    font-size: 20px;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+h1 {
+    align-self: center;
+    margin: 0vh 5vh 5vh 5vh;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.technicalContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 6vh 10vh;
+    background-color: rgb(214, 214, 214);
+    border: 2px solid rgb(150, 150, 150);
+    max-width: 70vw;
+    min-width: 500px;
+}
+
+.skillList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.columnOne, .columnTwo, .columnThree, .columnFour {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
 }
 
 .projectContainer {
@@ -82,4 +142,19 @@ body {
     flex: 1 1 500px;
     height: 40vh;
     min-height: 150px;
+}
+
+footer {
+    padding: 17px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContainer {
+    display: flex;
+    gap: 5vh;
+    justify-content: space-around;
+    width: 90%;
 }
