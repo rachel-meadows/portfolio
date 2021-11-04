@@ -85,11 +85,10 @@ h2 {
     flex-direction: column;
     padding: 5vh 7vh;
     background-color: rgb(214, 214, 214);
-    border: 1px solid rgb(26, 26, 26);
     max-width: 75vw;
-    min-width: 600px;
+    min-width: 650px;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px rgb(26, 26, 26);;
+    box-shadow: 1px 1px 3px rgb(26, 26, 26);;
 }
 
 .skillList {
@@ -130,7 +129,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 4vh;
-    padding: 4vh 25vh;
+    padding: 0vh 25vh 5vh 25vh;
     font-size: 40px;
     width: 100%;
 }
@@ -165,10 +164,10 @@ li {
 }
 
 button {
-    padding: 2vh 4vh;
+    padding: 10px 20px;
     font-size: 20px;
     color: black;
-    background-color: rgb(133, 133, 235);
+    background-color: rgba(144, 144, 241, 0.644);
     border: none;
     border-radius: 10px;
 }
@@ -176,6 +175,7 @@ button {
 button:hover {
     box-shadow: 1px 1px 2px rgb(15, 15, 15);
     cursor: pointer;
+    background-color: rgb(133, 133, 235);
 }
 
 footer {
@@ -192,4 +192,46 @@ footer {
     gap: 5vh;
     justify-content: space-around;
     width: 90%;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+form {
+    background-color: darkcyan;
+    padding: 30px 100px;
+    border: gray 2px solid;
+}
+
+.skill:hover {
+    cursor: pointer;
+}
+
+.skillText {
+    display: none;
+    align-self: flex-start;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.91);
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-top: 30px;
+    min-width: 150px;
+    max-width: 250px;
+    word-wrap: wrap;
+
+}
+
+.skillTextVisible {
+    display: flex;
+}
+
+
+/* Yes it does have to be done individually, it's for the JavaScript */
+#htmlText, #reduxText, #djangoText, #cssText, #reactText, #expressJSText, #javaScriptText, #restfulAPIsText, #nodeJSText, #pythonText #sqlText, #handlebarsText {
+    
 }

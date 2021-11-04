@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
+</head>
+<body>
 
     <div class="navContainer">
         <a href="#"><div class="navButton" id="currentNavButton">
@@ -38,20 +40,49 @@
         <h2>&lt &gt Technical Skills</h2>
         <div class="skillList">
             <ul class="columnOne">
-                <li><img src="img/html.png" class="icon">HTML</li>
-                <li><img src="img/redux.png" class="icon">Redux</li>  
+                <li class="skill" id="html"><img src="img/html.png" class="icon">HTML
+                    <div class="skillText" id="htmlText">HTML5 </div>
+                </li>
+                <li class="skill" id="redux"><img src="img/redux.png" class="icon">Redux
+                    <div class="skillText" id="reduxText">mmmmmmmmm</div>
+                </li>
+                <li class="skill" id="django"><img src="img/django.png" class="icon">Django
+                    <div class="skillText" id="djangoText">I created a full-stack Python / Django / SQL mixed metaphor generator</div>
+                </li>
+                </ul>
             </ul>
             <ul class="columnTwo">    
-                <li><img src="img/css.png" class="icon">CSS</li>
-                <li><img src="img/react.png" class="icon">React</li>
+                <li class="skill" id="css"><img src="img/css.png" class="icon">CSS
+                    <div class="skillText" id="cssText">mmmmmmmmm</div>
+                </li>
+                <li class="skill" id="react"><img src="img/react.png" class="icon">React
+                    <div class="skillText" id="reactText">mmmmmmmmm</div>
+                </li>
+                <li class="skill" id="expressJS"><img src="img/expressjs.png" class="icon">Express.js
+                    <div class="skillText" id="expressJSText">mmmmmmmmm</div>
+                </li>
             </ul>
             <ul class="columnThree">    
-                <li><img src="img/js.png" class="icon">JavaScript</li>
-                <li><img src="img/restful_apis.png" class="icon">RESTful APIs</li>
+                <li class="skill" id="javaScript"><img src="img/js.png" class="icon">JavaScript
+                    <div class="skillText" id="javaScriptText">mmmmmmmmm</div>
+                </li>
+                <li class="skill" id="restfulAPIs"><img src="img/restful_apis.png" class="icon">RESTful APIs
+                    <div class="skillText" id="restfulAPIsText">mmmmmmmmm</div>
+                </li>
+                <li class="skill" id="nodeJS"><img src="img/nodejs.png" class="icon">Node.js
+                    <div class="skillText" id="nodeJSText">mmmmmmmmm</div>
+                </li>
             </ul>
             <ul class="columnFour">
-                <li><img src="img/python.png" class="icon">Python</li>
-                <li><img src="img/sql.png" class="icon">SQL</li>
+                <li class="skill" id="python"><img src="img/python.png" class="icon">Python
+                    <div class="skillText" id="pythonText">Including BeautifulSoup, regex, and NLTK</div>
+                </li>
+                <li class="skill" id="sql"><img src="img/sql.png" class="icon">SQL
+                    <div class="skillText" id="sqlText">SQLite databases with basic commands</div>
+                </li>
+                <li class="skill" id="handlebars"><img src="img/handlebars.png" class="icon">Handlebars
+                    <div class="skillText" id="handlebarsText">mmmmmmmmm</div>
+                </li>
             </ul>
         </div>
     </div>
@@ -62,16 +93,16 @@
         <h2>🗣️ Business Skills</h2>
         <div class="skillList">
             <ul class="columnOne">
-                <li><img src="img/management.png" class="icon">Team management</li>
-                <li><img src="img/product.png" class="icon">Product ownership</li>
+                <li class="skill" id="teamManagement"><img src="img/management.png" class="icon">Team management</li>
+                <li class="skill" id="productOwnership"><img src="img/product.png" class="icon">Product ownership</li>
             </ul>
             <ul class="columnTwo">    
-                <li><img src="img/clients.png" class="icon">Client liaison</li>
-                <li><img src="img/public_speaking.png" class="icon">Public speaking</li>
+                <li class="skill" id="clientLiaison"><img src="img/clients.png" class="icon">Client liaison</li>
+                <li class="skill" id="publicSpeaking"><img src="img/public_speaking.png" class="icon">Public speaking</li>
             </ul>
             <ul class="columnThree">    
-                <li><img src="img/consulting.png" class="icon">Consulting</li>
-                <li><img src="img/research.png" class="icon">Research</li>
+                <li class="skill" id="consulting"><img src="img/consulting.png" class="icon">Consulting</li>
+                <li class="skill" id="research"><img src="img/research.png" class="icon">Research</li>
             </ul>
             </ul>
         </div>
@@ -100,8 +131,6 @@
         </div>
     </footer>
 
-</head>
-<body>
-    
+    <script src="script.js"></script>
 </body>
 </html>
