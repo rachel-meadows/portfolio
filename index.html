@@ -4,138 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rachel Meadows: About</title>
+    <title>Rachel Meadows</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <link rel="icon" type="image/png" href="favicon.ico">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
-    <div class="navContainer">
-        <a href = "#"><img src="img/logo.png" id="logo"/></a>
-        <div id="navContents">
-            <a href="#"><div class="navButton" id="currentNavButton">
-                About
-            </div></a>
-            <a href="cv.html"><div class="navButton">
-                CV
-            </div></a>
-            <a href="projects.html"><div class="navButton">
-                Projects
-            </div></a>
-            <a href="contact.html"><div class="navButton">
-                Contact
-            </div></a>
-            <div class="navButton">
-                Share ▼
+    <div id="navigation">
+        <div id="logoContainer">Logo</div>
+        <div id="menu">
+            <div id="home">Home</div>
+            <div>Projects</div>
+            <div>CV</div>
+            <div>Contact</div>
+        </div>
+    </div>
+    <div id="subNavigation">
+        <div id="subMenu">
+            <div>Home ⮞ Skills</div>
+            <div>Key Projects</div>
+            <div>Experience</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+    </div>
+
+    <div id="aboveTheFold">
+        <h1 class="animate__animated animate__fadeIn">Hi, I'm <span id="textShadow">Rachel</span>.</h1>
+        <div>
+            <p>I'm a bootcamp grad trained in full-stack development, with 3 years experience in a product management and operations role.</p>
+            <p>If you need a developer who's as happy talking to clients
+            and prioritizing requirements as slinging code, let's <strong><a href="contact.html">have a chat</a></strong>.</p>
+        </div>
+        <button id="readMore">Find out more ▼</button>
+    </div>
+
+    <div id="skills">
+        <h2>Technical Skills</h1>
+        <div id="technicalSkills">
+            <div class="skillColumn">
+                <div id="HTML" class="skill">HTML</div>
+                <div class="skill">Stuff</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="CSS" class="skill">CSS</div>
+                <div class="skill">Stuff</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="JavaScript" class="skill">JavaScript</div>
+                <div class="skill">Stuff</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="JavaScript" class="skill">JavaScript</div>
+                <div class="skill">Stuff</div>
+                <div class="skill">Stuff</div>
             </div>
         </div>
-    </div>
 
-    <div class="bodyContainer">
-        <h1 class="animate__animated animate__fadeIn">Hi, I'm Rachel.</h1>
-        <p>I'm a bootcamp grad trained in full-stack development, with 3 years experience in a product management and operations role.</p>
-        <p>If you need a developer who's as happy talking to clients
-        and prioritizing requirements as slinging code, let's <strong><a href="contact.html" class="inlineLink">have a chat</a></strong>.</p>
-    </div>
-
-    <div class="skillContainer">
-        <h2>&lt &gt Technical Skills</h2>
-        <div class="skillList">
-            <ul class="columnOne">
-                <li class="skill" id="html"><img src="img/html.png" class="icon">HTML
-                    <div class="skillText" id="htmlText">HTML5 </div>
-                </li>
-                <li class="skill" id="redux"><img src="img/redux.png" class="icon">Redux
-                    <div class="skillText" id="reduxText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="django"><img src="img/django.png" class="icon">Django
-                    <div class="skillText" id="djangoText">I created a full-stack Python / Django / SQL mixed metaphor generator</div>
-                </li>
-                </ul>
-            </ul>
-            <ul class="columnTwo">    
-                <li class="skill" id="css"><img src="img/css.png" class="icon">CSS
-                    <div class="skillText" id="cssText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="react"><img src="img/react.png" class="icon">React
-                    <div class="skillText" id="reactText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="expressJS"><img src="img/expressjs.png" class="icon">Express.js
-                    <div class="skillText" id="expressJSText">mmmmmmmmm</div>
-                </li>
-            </ul>
-            <ul class="columnThree">    
-                <li class="skill" id="javaScript"><img src="img/js.png" class="icon">JavaScript
-                    <div class="skillText" id="javaScriptText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="restfulAPIs"><img src="img/restful_apis.png" class="icon">RESTful APIs
-                    <div class="skillText" id="restfulAPIsText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="nodeJS"><img src="img/nodejs.png" class="icon">Node.js
-                    <div class="skillText" id="nodeJSText">mmmmmmmmm</div>
-                </li>
-            </ul>
-            <ul class="columnFour">
-                <li class="skill" id="python"><img src="img/python.png" class="icon">Python
-                    <div class="skillText" id="pythonText">Including BeautifulSoup, regex, and NLTK</div>
-                </li>
-                <li class="skill" id="sql"><img src="img/sql.png" class="icon">SQL
-                    <div class="skillText" id="sqlText">SQLite databases with basic commands</div>
-                </li>
-                <li class="skill" id="handlebars"><img src="img/handlebars.png" class="icon">Handlebars
-                    <div class="skillText" id="handlebarsText">mmmmmmmmm</div>
-                </li>
-            </ul>
+        <h2>Business Skills</h1>
+        <div id="businessSkills">
+            <div class="skillColumn">
+                <div id="teamManagement" class="skill">Team management</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="productOwnership" class="skill">Product ownership</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="consulting" class="skill">Consulting</div>
+                <div class="skill">Stuff</div>
+            </div>
+            <div class="skillColumn">
+                <div id="consulting" class="skill">Consulting</div>
+                <div class="skill">Stuff</div>
+            </div>
+        </div>
         </div>
     </div>
 
-    <br />
+    <div id="projects">
+        <h2>Key projects</h1>
+            <div>e.g.</div>
+    </div>
+
+    <div id="experience">
+        <h2>Experience</h1>
+            <div>e.g.</div>
+    </div>
+
+    <div id="projects">
+        <h2>About</h1>
+            <div>e.g.</div>
+    </div>
+
+    <div id="experience">
+        <h2>Contact form</h1>
+            <div>e.g.</div>
+    </div>
+
+    <div id="footer">
+        <div class="footerContents">© Rachel Meadows 2021</div>
+        <div class="footerContents">Github</div>
+        <div class="footerContents">LinkedIn</div>
+    </div>
     
-    <div class="skillContainer">
-        <h2>🗣️ Business Skills</h2>
-        <div class="skillList">
-            <ul class="columnOne">
-                <li class="skill" id="teamManagement"><img src="img/management.png" class="icon">Team management</li>
-                <li class="skill" id="productOwnership"><img src="img/product.png" class="icon">Product ownership</li>
-            </ul>
-            <ul class="columnTwo">    
-                <li class="skill" id="clientLiaison"><img src="img/clients.png" class="icon">Client liaison</li>
-                <li class="skill" id="publicSpeaking"><img src="img/public_speaking.png" class="icon">Public speaking</li>
-            </ul>
-            <ul class="columnThree">    
-                <li class="skill" id="consulting"><img src="img/consulting.png" class="icon">Consulting</li>
-                <li class="skill" id="research"><img src="img/research.png" class="icon">Research</li>
-            </ul>
-            </ul>
-        </div>
-    </div>
-
-    <br />
-
-    <div class="moreAboutMeContainer">
-        <h2>More about me</h2>
-        <p>I have a Psychology BSc(Hons) from the University of Auckland. 
-            After spending 3 years working at an EdTech startup, I fell in 
-            love with software and retrained as a full-stack web developer 
-            at Enspiral Dev Academy.</p>
-            <p>In my free time, I enjoy reading about computational linguistics, 
-            playing D&D, weightlifting, and riding my motorbike.
-            I'm also a volunteer trainer at Mania Sportsfighting Gym.</p>
-    </div>
-
-    <a href="contact.html"><button>Let's talk</button></a>
-
-    <footer>
-        <div class="footerContainer">
-            <span>© Rachel Meadows 2021</span>
-            <strong><a href="https://github.com/rachel-meadows" target="_blank">Github</a></strong>
-            <strong><a href="https://www.linkedin.com/in/rachel-meadows/" target="_blank">LinkedIn</a></strong>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
