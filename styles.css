@@ -151,7 +151,7 @@ button {
 
 .skill:hover {
     cursor: pointer;
-    background-color: rgba(148, 148, 148, 0.5);
+    background-color: hsla(170, 71%, 39%, 0.6);
 }
 
 .skillText {
@@ -167,7 +167,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 7vh;
 }
 
 .project {
@@ -177,23 +177,67 @@ button {
     align-items: center;
     background-color: #F5F1ED;
     border-radius: 4px;
+    gap: 10px;
 }
 
 .projectText {
+    display: flex;
+    width: 60%;
     padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.projectBlurb p, .projectBlurb em {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+}
+
+/* Button */
+.projectLink {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border: #E3170A solid 2px;
+    background-color: #F5F1ED;
+}
+
+.projectLink:hover {
+    background-color: hsla(4, 92%, 46%, 0.486);
 }
 
 #malaphorImage {
     background-image: url("img/projects/malaphor.png");
-    border-radius: 4px;
+}
+
+#tictactoeImage {
+    background-image: url("img/projects/tictactoe.png");
+}
+
+#etchImage {
+    background-image: url("img/projects/etch_a_sketch.png");
+}
+
+#github {
+    width: 30px;
+    height: 30px;
 }
 
 .projectTitle {
     width: 100%;
     padding: 10px;
-    background-color: hsla(4, 92%, 46%, 0.9);
+    background-color: hsla(0, 0%, 0%, 0.95);
+    color: white;
     font-weight: bold;
     text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.4);
 }
 
 .projectImage {
@@ -203,6 +247,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
 }
 
 #projects, #experience, #about {
@@ -210,7 +255,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsla(201, 88%, 53%, 0.7);
+    background-color: hsla(170, 71%, 39%, 0.6);
     padding: 5vw 15vw;
 }
 
@@ -226,7 +271,7 @@ button {
 }
 
 .aboutText {
-    font-size: 1.05rem;
+    font-size: 1.03rem;
 }
 
 #contact {
@@ -246,4 +291,6 @@ button {
 
 .footerContents {
     font-size: 0.8rem;
+    color: white;
+    font-weight: 500;
 }

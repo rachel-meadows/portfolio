@@ -35,7 +35,7 @@
     <div id="aboveTheFold">
         <h1 class="animate__animated animate__fadeIn">Hi, I'm <span id="textShadow">Rachel</span>.</h1>
         <div>
-            <p>I'm a bootcamp grad trained in full-stack development, with 3 years experience in a product management and operations role.</p>
+            <p>I'm a junior full-stack developer, with 3 years experience in a product management and operations role.</p>
             <p>If you need a developer who's as happy talking to clients
             and prioritizing requirements as slinging code, let's <strong><a href="contact.html">have a chat</a></strong>.</p>
         </div>
@@ -164,32 +164,59 @@
 
                 <div id="projectColumn">
                     <div class="project">
-                        <div class="projectImage" id="malaphorImage">
-                            <div class="projectTitle" id="malaphorTitle">Malaphor generator</div>
+                        <div class="projectImage" id="malaphorImage" alt="Image of a command line program with the words 'figure of speech' + 'turn of phrase' = 'turn of speech'">
+                            <div class="projectTitle">Malaphor generator</div>
                         </div>
-                        <div class="projectText">Hi, this is a writeup about this project.</div>
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>A 'malaphor' is when two figures of speech are merged, like combining <em>"It's not brain surgery"</em> and <em>"It's not rocket science"</em> to get <em>"It's not rocket surgery."</em></p>
+                                <p>This command-line tool was made in Python. It generates malaphors based on proverbs, with priority given to semantically similar sayings.</p>
+                             </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/malaphor" target="_blank"><img src="img/github.png" id="github"></a>
+                                <button class="projectLink">View site</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="project">
-                        <div class="projectText">Hi, this is a writeup about this project.</div>
-                        <div class="projectImage" id="malaphorImage">
-                            <div class="projectTitle" id="malaphorTitle">Fridge magnet site</div>
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>In a twist on an old classic, this tic-tac-toe game uses design elements to give character to the user's token - and the bot they play against.</p>
+                                <p>It was made using CSS, HTML, and vanilla JS.</p>
+                            </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/odin-project-tic-tac-toe" target="_blank"><img src="img/github.png" id="github"></a>
+                                <a href="https://rachel-meadows.github.io/odin-project-tic-tac-toe/" target=_blank""><button class="projectLink">View site</button></a>
+                            </div>
+                        </div>
+                        <div class="projectImage" id="tictactoeImage" alt="Image of a tic-tac-toe game in progress">
+                            <div class="projectTitle">Tic Tac Toe</div>
                         </div>
                     </div>
 
                     <div class="project">
-                        <div class="projectImage" id="malaphorImage">
-                            <div class="projectTitle" id="malaphorTitle">Etch-a-sketch</div>
+                        <div class="projectImage" id="etchImage" alt="Etch-a-sketch with a drawing of a rubber duck">
+                            <div class="projectTitle">Etch-a-sketch</div>
                         </div>
-                        <div class="projectText">Hi, this is a writeup about this project.</div>
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>This retro Etch-a-Sketch lets users choose their colour and the size of the grid.</p>
+                                <p>It was made using CSS, HTML, and vanilla JS.</p>
+                            </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/odin-project-etch-a-sketch" target="_blank"><img src="img/github.png" id="github"></a>
+                                <a href="https://rachel-meadows.github.io/odin-project-etch-a-sketch/" target="_blank"><button class="projectLink">View site</button></a>
+                            </div>
+                        </div>
                     </div>
-                    <button style="width: 20vw;">More projects</button>
+                    <a href="projects.html"><button>More projects</button></a>
                 </div>
     </div>
 
     <div id="experience">
-        <h2>Experience</h1>
-            <div>e.g.</div>
+        <h2>Experience</h2>
+        Quit trying fancy stuff and put a CSV here!
     </div>
 
     <div id="about">
@@ -203,7 +230,7 @@
                 <h3 style="text-align: center;"></h3> <!-- If I want a title later -->
                 <video width="400" height="240" controls>
                     <source src="#" type="video/mp4">
-                  </video> 
+                </video> 
             </div>
         </div>
         <button id="contact">Let's talk</button>
@@ -212,8 +239,8 @@
 
     <div id="footer">
         <div class="footerContents">© Rachel Meadows 2021</div>
-        <div class="footerContents">Github</div>
-        <div class="footerContents">LinkedIn</div>
+        <a href="https://github.com/rachel-meadows" target="_blank"><div class="footerContents">Github</div></a>
+        <a href="https://www.linkedin.com/in/rachel-meadows" target="_blank"><div class="footerContents">LinkedIn</div></a>
     </div>
     
     <script src="script.js"></script>
