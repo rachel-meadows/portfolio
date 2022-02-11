@@ -3,17 +3,16 @@ const nav = document.querySelector(".navigation");
 const readMore = document.querySelector("#readMore");
 const header = document.querySelector("#aboveTheFold");
 
-// Index.html
+// Index.html scroll button
 function scrollToContent() {
     skills.scrollIntoView({behavior: "smooth"});
 }
 readMore.addEventListener("click", scrollToContent);
 
-// All pages
+// Sticky navigation
 window.onscroll = function() {
     makeNavSticky()
 };
-
 function makeNavSticky() {
     let headerHeight = header.offsetHeight;
   if (window.pageYOffset > (headerHeight - 10)) {

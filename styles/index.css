@@ -65,11 +65,6 @@ button {
     padding: 5px;
 }
 
-.skill:hover {
-    cursor: pointer;
-    background-color: hsla(170, 71%, 39%, 0.6);
-}
-
 .skillText {
     font-size: 0.9rem;
     font-weight: bold;
@@ -139,11 +134,6 @@ button {
     background-image: url("img/projects/etch_a_sketch.png");
 }
 
-#github {
-    width: 30px;
-    height: 30px;
-}
-
 .projectTitle {
     width: 100%;
     padding: 10px;
@@ -174,7 +164,7 @@ button {
     filter: grayscale(0.1)    
 }
 
-#projects, #experience, #about {
+#projects, #about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,7 +173,7 @@ button {
     padding: 5vw 15vw;
 }
 
-#experience {
+#about {
     background-color: #F5F1ED;
 }
 
@@ -199,18 +189,3 @@ button {
     text-align: center;
 }
 
-#footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    padding: 5vh 5vw;
-    display: flex;
-    gap: 10vw;
-}
-
-.footerContents {
-    font-size: 0.8rem;
-    color: white;
-    font-weight: 500;
-}
