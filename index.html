@@ -4,138 +4,245 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rachel Meadows: About</title>
+    <title>Rachel Meadows</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <link rel="icon" type="image/png" href="favicon.ico">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
-    <div class="navContainer">
-        <a href = "#"><img src="img/logo.png" id="logo"/></a>
-        <div id="navContents">
-            <a href="#"><div class="navButton" id="currentNavButton">
-                About
-            </div></a>
-            <a href="cv.html"><div class="navButton">
-                CV
-            </div></a>
-            <a href="projects.html"><div class="navButton">
-                Projects
-            </div></a>
-            <a href="contact.html"><div class="navButton">
-                Contact
-            </div></a>
-            <div class="navButton">
-                Share ▼
+    <div id="navigation">
+        <a href="index.html"><div id="logoContainer"><img src="img/logo.png" alt="Logo" id="logo"></div></a>
+        <div id="menu">
+            <div id="home">Home</div>
+            <div>Projects</div>
+            <div>CV</div>
+            <div>Contact</div>
+        </div>
+    </div>
+    <div id="subNavigation">
+        <div id="subMenu">
+            <div>Home ⮞ Skills</div>
+            <div>Key Projects</div>
+            <div>Experience</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+    </div>
+
+    <div id="aboveTheFold">
+        <h1 class="animate__animated animate__fadeIn">Hi, I'm <span id="textShadow">Rachel</span>.</h1>
+        <div>
+            <p>I'm a junior full-stack developer, with 3 years experience in a product management and operations role.</p>
+            <p>If you need a developer who's as happy talking to clients
+            and prioritizing requirements as slinging code, let's <strong><a href="contact.html">have a chat</a></strong>.</p>
+        </div>
+        <button id="readMore">Find out more ▼</button>
+    </div>
+
+    <div id="skills">
+
+        <h2>Technical Skills</h1>
+        <div id="technicalSkills">
+
+            <div class="skillColumn">
+                <div id="HTML" class="skill">
+                    <img src="img/technicalSkills/html.png" class="logo" alt="HTML logo">
+                    <div class=skillText>HTML</div>
+                </div>
+                <div id="Git" class="skill">
+                    <img src="img/technicalSkills/git.png" class="logo" alt="Git logo">
+                     <div class=skillText>Git</div>
+                 </div> 
+                 <div id="Django" class="skill">
+                    <img src="img/technicalSkills/django.png" class="logo" alt="Django logo">
+                     <div class=skillText>Django</div>
+                 </div> 
+            </div>
+
+            <div class="skillColumn">
+                <div id="CSS" class="skill">
+                    <img src="img/technicalSkills/css.png" class="logo" alt="CSS logo">
+                    <div class=skillText>CSS</div>
+                </div>
+                <div id="Redux" class="skill">
+                    <img src="img/technicalSkills/redux.png" class="logo" alt="Redux logo">
+                     <div class=skillText>Redux</div>
+                 </div> 
+                 <div id="restAPIs" class="skill">
+                    <img src="img/technicalSkills/restful_apis.png" class="logo" alt="RESTful API symbol">
+                     <div class=skillText>REST APIs</div>
+                 </div> 
+            </div>
+
+            <div class="skillColumn">
+                <div id="JavaScript" class="skill">
+                   <img src="img/technicalSkills/js.png" class="logo" alt="JavaScript logo">
+                    <div class=skillText>JavaScript</div>
+                </div>    
+                <div id="React" class="skill">
+                    <img src="img/technicalSkills/react.png" class="logo" alt="React logo">
+                     <div class=skillText>React</div>
+                 </div> 
+                 <div id="express" class="skill">
+                    <img src="img/technicalSkills/expressjs.png" class="logo" alt="Express logo">
+                     <div class=skillText>Express.JS</div>
+                 </div> 
+            </div>
+
+            <div class="skillColumn">
+                <div id="Python" class="skill">
+                    <img src="img/technicalSkills/python.png" class="logo" alt="Python logo">
+                     <div class=skillText>Python</div>
+                 </div> 
+                 <div id="SQL" class="skill">
+                    <img src="img/technicalSkills/sql.png" class="logo" alt="SQL symbol">
+                     <div class=skillText>SQL</div>
+                 </div> 
+                 <div id="Node" class="skill">
+                    <img src="img/technicalSkills/nodejs.png" class="logo" alt="Node.JS logo">
+                     <div class=skillText>Node.js</div>
+                 </div> 
+            </div>
+
+        </div>
+        <!-- Empty element for padding -->
+        <h2></h2>
+        <h2>Business Skills</h1>
+        <div id="businessSkills">
+            <div class="skillColumn">
+                <div id="teamManagement" class="skill">
+                    <img src="img/businessSkills/management.png" class="logo" alt="Symbol for management">
+                     <div class=skillText>Team management</div>
+                 </div>
+
+                 <div id="productOwnership" class="skill">
+                    <img src="img/businessSkills/product.png" class="logo" alt="Symbol showing a product">
+                     <div class=skillText>Product Ownership</div>
+                 </div>
+            </div>
+            <div class="skillColumn">
+                <div id="consulting" class="skill">
+                    <img src="img/businessSkills/consulting.png" class="logo" alt="Symbol showing a consultant">
+                     <div class=skillText>Consulting</div>
+                 </div>
+                 <div id="publicSpeaking" class="skill">
+                    <img src="img/businessSkills/public_speaking.png" class="logo" alt="Symbol showing a public speaker">
+                     <div class=skillText>Public Speaking</div>
+                 </div>
+            </div>
+            <div class="skillColumn">
+                <div id="clientLiaison" class="skill">
+                    <img src="img/businessSkills/client_liaison.png" class="logo" alt="Symbol showing a handshake">
+                     <div class=skillText>client Liaison</div>
+                 </div>
+                 <div id="research" class="skill">
+                    <img src="img/businessSkills/research.png" class="logo" alt="Symbol showing a magnifying glass and data">
+                     <div class=skillText>Research</div>
+                 </div>
+            </div>
+            <div class="skillColumn">
+                <div id="userTesting" class="skill">
+                    <img src="img/businessSkills/user_testing.png" class="logo" alt="Symbol showing a user test form">
+                     <div class=skillText>User Testing</div>
+                 </div>
+                 <div id="dataAnalysis" class="skill">
+                    <img src="img/businessSkills/data_analysis.png" class="logo" alt="Symbol showing a stylised graph">
+                     <div class=skillText>Data Analysis</div>
+                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="bodyContainer">
-        <h1 class="animate__animated animate__fadeIn">Hi, I'm Rachel.</h1>
-        <p>I'm a bootcamp grad trained in full-stack development, with 3 years experience in a product management and operations role.</p>
-        <p>If you need a developer who's as happy talking to clients
-        and prioritizing requirements as slinging code, let's <strong><a href="contact.html" class="inlineLink">have a chat</a></strong>.</p>
-    </div>
-
-    <div class="skillContainer">
-        <h2>&lt &gt Technical Skills</h2>
-        <div class="skillList">
-            <ul class="columnOne">
-                <li class="skill" id="html"><img src="img/html.png" class="icon">HTML
-                    <div class="skillText" id="htmlText">HTML5 </div>
-                </li>
-                <li class="skill" id="redux"><img src="img/redux.png" class="icon">Redux
-                    <div class="skillText" id="reduxText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="django"><img src="img/django.png" class="icon">Django
-                    <div class="skillText" id="djangoText">I created a full-stack Python / Django / SQL mixed metaphor generator</div>
-                </li>
-                </ul>
-            </ul>
-            <ul class="columnTwo">    
-                <li class="skill" id="css"><img src="img/css.png" class="icon">CSS
-                    <div class="skillText" id="cssText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="react"><img src="img/react.png" class="icon">React
-                    <div class="skillText" id="reactText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="expressJS"><img src="img/expressjs.png" class="icon">Express.js
-                    <div class="skillText" id="expressJSText">mmmmmmmmm</div>
-                </li>
-            </ul>
-            <ul class="columnThree">    
-                <li class="skill" id="javaScript"><img src="img/js.png" class="icon">JavaScript
-                    <div class="skillText" id="javaScriptText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="restfulAPIs"><img src="img/restful_apis.png" class="icon">RESTful APIs
-                    <div class="skillText" id="restfulAPIsText">mmmmmmmmm</div>
-                </li>
-                <li class="skill" id="nodeJS"><img src="img/nodejs.png" class="icon">Node.js
-                    <div class="skillText" id="nodeJSText">mmmmmmmmm</div>
-                </li>
-            </ul>
-            <ul class="columnFour">
-                <li class="skill" id="python"><img src="img/python.png" class="icon">Python
-                    <div class="skillText" id="pythonText">Including BeautifulSoup, regex, and NLTK</div>
-                </li>
-                <li class="skill" id="sql"><img src="img/sql.png" class="icon">SQL
-                    <div class="skillText" id="sqlText">SQLite databases with basic commands</div>
-                </li>
-                <li class="skill" id="handlebars"><img src="img/handlebars.png" class="icon">Handlebars
-                    <div class="skillText" id="handlebarsText">mmmmmmmmm</div>
-                </li>
-            </ul>
         </div>
     </div>
 
-    <br />
+
+    <div id="projects">
+        <h2>Key projects</h1>
+            <p>These are a few of my projects - see the <a href="projects.html">projects</a> page for more.</p>
+
+                <div id="projectColumn">
+                    <div class="project">
+                        <div class="projectImage" id="malaphorImage" alt="Image of a command line program with the words 'figure of speech' + 'turn of phrase' = 'turn of speech'">
+                            <div class="projectTitle">Malaphor generator</div>
+                        </div>
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>A 'malaphor' is when two figures of speech are merged, like combining <em>"It's not brain surgery"</em> and <em>"It's not rocket science"</em> to get <em>"It's not rocket surgery."</em></p>
+                                <p>This command-line tool was made in Python. It generates malaphors based on proverbs, with priority given to semantically similar sayings.</p>
+                             </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/malaphor" target="_blank"><img src="img/github.png" id="github"></a>
+                                <button class="projectLink">View site</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>In a twist on an old classic, this tic-tac-toe game uses design elements to give character to the user's token - and the bot they play against.</p>
+                                <p>It was made using CSS, HTML, and vanilla JS.</p>
+                            </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/odin-project-tic-tac-toe" target="_blank"><img src="img/github.png" id="github"></a>
+                                <a href="https://rachel-meadows.github.io/odin-project-tic-tac-toe/" target=_blank""><button class="projectLink">View site</button></a>
+                            </div>
+                        </div>
+                        <div class="projectImage" id="tictactoeImage" alt="Image of a tic-tac-toe game in progress">
+                            <div class="projectTitle">Tic Tac Toe</div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="projectImage" id="etchImage" alt="Etch-a-sketch with a drawing of a rubber duck">
+                            <div class="projectTitle">Etch-a-sketch</div>
+                        </div>
+                        <div class="projectText">
+                            <div class="projectBlurb">
+                                <p>This retro Etch-a-Sketch lets users choose their colour and the size of the grid.</p>
+                                <p>It was made using CSS, HTML, and vanilla JS.</p>
+                            </div>
+                            <div id="projectLinks">
+                                <a href="https://github.com/rachel-meadows/odin-project-etch-a-sketch" target="_blank"><img src="img/github.png" id="github"></a>
+                                <a href="https://rachel-meadows.github.io/odin-project-etch-a-sketch/" target="_blank"><button class="projectLink">View site</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="projects.html"><button>More projects</button></a>
+                </div>
+    </div>
+
+    <div id="experience">
+        <h2>Experience</h2>
+        Quit trying fancy stuff and put a CSV here!
+    </div>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <div id=aboutContent>
+            <div>
+                <p class="aboutText">I have a Psychology BSc(Hons) from the University of Auckland. After spending 3 years working at an EdTech startup, I fell in love with software and retrained as a full-stack web developer at Enspiral Dev Academy.</p>
+                <p class="aboutText">In my free time, I enjoy reading about computational linguistics, playing D&D, weightlifting, and riding my motorbike. I'm also a volunteer trainer at Mania Sportsfighting Gym.</p>
+            </div>
+            <div>
+                <h3 style="text-align: center;"></h3> <!-- If I want a title later -->
+                <video width="400" height="240" controls>
+                    <source src="#" type="video/mp4">
+                </video> 
+            </div>
+        </div>
+        <button id="contact">Let's talk</button>
+    </div>
+
+
+    <div id="footer">
+        <div class="footerContents">© Rachel Meadows 2021</div>
+        <a href="https://github.com/rachel-meadows" target="_blank"><div class="footerContents">Github</div></a>
+        <a href="https://www.linkedin.com/in/rachel-meadows" target="_blank"><div class="footerContents">LinkedIn</div></a>
+    </div>
     
-    <div class="skillContainer">
-        <h2>🗣️ Business Skills</h2>
-        <div class="skillList">
-            <ul class="columnOne">
-                <li class="skill" id="teamManagement"><img src="img/management.png" class="icon">Team management</li>
-                <li class="skill" id="productOwnership"><img src="img/product.png" class="icon">Product ownership</li>
-            </ul>
-            <ul class="columnTwo">    
-                <li class="skill" id="clientLiaison"><img src="img/clients.png" class="icon">Client liaison</li>
-                <li class="skill" id="publicSpeaking"><img src="img/public_speaking.png" class="icon">Public speaking</li>
-            </ul>
-            <ul class="columnThree">    
-                <li class="skill" id="consulting"><img src="img/consulting.png" class="icon">Consulting</li>
-                <li class="skill" id="research"><img src="img/research.png" class="icon">Research</li>
-            </ul>
-            </ul>
-        </div>
-    </div>
-
-    <br />
-
-    <div class="moreAboutMeContainer">
-        <h2>More about me</h2>
-        <p>I have a Psychology BSc(Hons) from the University of Auckland. 
-            After spending 3 years working at an EdTech startup, I fell in 
-            love with software and retrained as a full-stack web developer 
-            at Enspiral Dev Academy.</p>
-            <p>In my free time, I enjoy reading about computational linguistics, 
-            playing D&D, weightlifting, and riding my motorbike.
-            I'm also a volunteer trainer at Mania Sportsfighting Gym.</p>
-    </div>
-
-    <a href="contact.html"><button>Let's talk</button></a>
-
-    <footer>
-        <div class="footerContainer">
-            <span>© Rachel Meadows 2021</span>
-            <strong><a href="https://github.com/rachel-meadows" target="_blank">Github</a></strong>
-            <strong><a href="https://www.linkedin.com/in/rachel-meadows/" target="_blank">LinkedIn</a></strong>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
