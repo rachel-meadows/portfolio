@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #1838f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:clicked {
+    color: #5805B1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+#home {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#subNavigation {
+    z-index: 100;
+    margin-top: 3.5vw;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5vw 5vw;
+}
+
+#subMenu {
+    display: flex;
+    gap: 5vw;
+}
+
+#menu {
+    display: flex;
+    gap: 5vw;
+}
+
+h1, #textShadow {
+    font-size: 4rem;
+    font-family: "Open Sans";
+}
+
+#textShadow {
+    color: #E3170A;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 4vh;
+}
+
+p {
+    font-size: 1.1rem;
+    padding-bottom: 5vh;
+}
+
+#logo {
+    width: 32px;
+    padding-left: 10px;
+}
+
+.navigation {
+    display: none;
+    z-index: 10;
+    width: 100%;
+    background-color: #212327;
+    color: #dbdbdb;
+    justify-content: right;
+    align-items: center;
+    padding: 0.7vw 5vw;
+    font-size: 1.2rem;
+}
+
+.sticky {
+    display: flex;
+    position: fixed;
+    top: 0;
+  }

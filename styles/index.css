@@ -1,102 +1,7 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#navigation {
-    z-index: 100;
-    width: 100%;
-    background-color: #212327;
-    color: #dbdbdb;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    padding: 1vw 5vw;
-}
-
-a {
-    color: #1838f0;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-a:clicked {
-    color: #5805B1;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-#logo {
-    width: 200px;
-}
-
-#logo:hover {
-    filter: brightness(200);
-}
-
-#logoContainer:hover {
-    cursor: pointer;
-}
-
-#home {
-    color: white;
-    font-weight: bold;
-}
-
-#subNavigation {
-    z-index: 100;
-    margin-top: 3.5vw;
-    width: 100%;
-    background-color: rgb(26, 26, 26);
-    color: white;
-    position: fixed;
-    display: none;
-    justify-content: flex-start;
-    padding: 0.5vw 5vw;
-}
-
-#subMenu {
-    display: flex;
-    gap: 5vw;
-}
-
-#menu {
-    display: flex;
-    gap: 5vw;
-}
-
-h1, #textShadow {
-    font-size: 3rem;
-    font-family: "Open Sans";
-}
-
-#textShadow {
-    color: #E3170A;
-    text-shadow: rgb(0, 0, 0) 1px 1px;
-}
-
-h2 {
-    font-size: 2rem;
-    padding-bottom: 4vh;
-}
-
-p {
-    font-size: 1.3rem;
-    padding-bottom: 5vh;
-}
-
-
-/* Styles specific to index.html: */
 #aboveTheFold {
-    padding: 5vw 20vw 0 20vw;
-    height: 100vh;
-    /* background-color: #0197F6; */
+    padding: 0vw 20vw 0vw 20vw;
+    /* Small amount of colour at bottom to encourage scrolling */
+    height: 95vh;
     background-color: black;
     background: radial-gradient(rgb(20, 20, 20), black);
     color: white;
@@ -208,13 +113,11 @@ button {
 }
 
 .projectBlurb p, .projectBlurb em {
-    font-size: 0.9rem;
     padding-bottom: 5px;
 }
 
 /* Button */
 .projectLink {
-    font-size: 0.9rem;
     padding: 10px 20px;
     border: #E3170A solid 2px;
     background-color: #F5F1ED;
@@ -248,7 +151,7 @@ button {
     color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.4);
 }
 
@@ -289,10 +192,6 @@ button {
     flex-direction: row;
     align-items: center;
     gap: 3vw;
-}
-
-.aboutText {
-    font-size: 1.03rem;
 }
 
 #contact {
