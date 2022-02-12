@@ -1,7 +1,7 @@
 const skills = document.querySelector("#skills");
 const nav = document.querySelector(".navigation");
 const readMore = document.querySelector("#readMore");
-const header = document.querySelector("#aboveTheFold");
+const header = document.querySelector("#wrapper");
 
 // Index.html scroll button
 function scrollToContent() {
@@ -21,3 +21,10 @@ function makeNavSticky() {
     nav.classList.remove("sticky");
   }
 } 
+
+// Load particles
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('Particles-js config loaded correctly');
+});
+
+

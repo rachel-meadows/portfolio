@@ -1,16 +1,4 @@
-#aboveTheFold {
-    padding: 0vw 20vw 0vw 20vw;
-    /* Small amount of colour at bottom to encourage scrolling */
-    height: 95vh;
-    background-color: black;
-    background: radial-gradient(rgb(20, 20, 20), black);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10vh;
-}
+
 
 button {
     background-color: #E3170A;
@@ -187,5 +175,44 @@ button {
 #contact {
     margin-top: 5vh;
     text-align: center;
+}
+
+.aboveTheFold {
+  padding: 0vw 20vw 0vw 20vw;
+  /* Small amount of colour at bottom to encourage scrolling */
+  height: 95vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+  z-index: 2;
+  position: relative;
+}
+
+#particles-js {
+    background-color: black;
+    background: radial-gradient(rgb(20, 20, 20), black);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+}
+
+#wrapper {
+    position: relative;
+    width: 100vw;
+    /* color: #030358; */
+}
+
+#readMore {
+    border: none;
+}
+
+#readMore:hover {
+    border: none;
 }
 
