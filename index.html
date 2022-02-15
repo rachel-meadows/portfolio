@@ -30,8 +30,8 @@
         <div class="aboveTheFold">
             <h1 class="animate__animated animate__fadeIn">Hi, I'm <span id="textShadow">Rachel</span>.</h1>
             <div>
-                <h3>I'm a junior <strong>full-stack developer</strong>, with 3 years experience in a product management and operations role.</h3>
-                <h3>If you need a developer who's as happy talking to clients
+                <h3 class="headerText">I'm a junior <strong>full-stack developer</strong>, with 3 years experience in a product management and operations role.</h3>
+                <h3 class="headerText">If you need a developer who's as happy talking to clients
                 and prioritizing requirements as slinging code, let's <strong><a href="contact.html">have a chat</a></strong>.</h3>
             </div>
             <button id="readMore">Find out more ▼</button>
@@ -107,8 +107,9 @@
             </div>
 
         </div>
-        <!-- Empty element for padding -->
-        <h2></h2>
+        
+        <br>
+
         <h2>Business Skills</h1>
         <div id="businessSkills">
             <div class="skillColumn">
@@ -159,58 +160,56 @@
 
     <div id="projects">
         <h2>Selected projects</h1>
-            <p>These are just a few of my projects — see the <a href="projects.html" target="_blank">projects</a> page for more.</p>
-
-                <div id="projectColumn">
-                    <div class="project">
-                        <div class="projectImage" id="malaphorImage" alt="Image of a command line program with the words 'figure of speech' + 'turn of phrase' = 'turn of speech'">
-                            <div class="projectTitle">Malaphor generator</div>
-                        </div>
-                        <div class="projectText">
-                            <div class="projectBlurb">
-                                <p>A 'malaphor' is when two figures of speech are merged, like combining <em>"It's not brain surgery"</em> and <em>"It's not rocket science"</em> to get <em>"It's not rocket surgery."</em></p>
-                                <p>This command-line tool was made in Python. It generates malaphors based on proverbs, with priority given to semantically similar sayings.</p>
-                             </div>
-                            <div id="projectLinks">
-                                <a href="https://github.com/rachel-meadows/malaphor" target="_blank"><img src="img/github.png" id="github"></a>
-                                <button class="projectLink">View site</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="projectText">
-                            <div class="projectBlurb">
-                                <p>In a twist on an old classic, this tic-tac-toe game uses design elements to give character to the user's token - and the bot they play against.</p>
-                                <p>It was made using CSS, HTML, and vanilla JS.</p>
-                            </div>
-                            <div id="projectLinks">
-                                <a href="https://github.com/rachel-meadows/odin-project-tic-tac-toe" target="_blank"><img src="img/github.png" id="github"></a>
-                                <a href="https://rachel-meadows.github.io/odin-project-tic-tac-toe/" target=_blank""><button class="projectLink">View site</button></a>
-                            </div>
-                        </div>
-                        <div class="projectImage" id="tictactoeImage" alt="Image of a tic-tac-toe game in progress">
-                            <div class="projectTitle">Tic Tac Toe</div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="projectImage" id="etchImage" alt="Etch-a-sketch with a drawing of a rubber duck">
-                            <div class="projectTitle">Etch-a-sketch</div>
-                        </div>
-                        <div class="projectText">
-                            <div class="projectBlurb">
-                                <p>This retro Etch-a-Sketch lets users choose their colour and the size of the grid.</p>
-                                <p>It was made using CSS, HTML, and vanilla JS.</p>
-                            </div>
-                            <div id="projectLinks">
-                                <a href="https://github.com/rachel-meadows/odin-project-etch-a-sketch" target="_blank"><img src="img/github.png" id="github"></a>
-                                <a href="https://rachel-meadows.github.io/odin-project-etch-a-sketch/" target="_blank"><button class="projectLink">View site</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="projects.html"><button>More projects</button></a>
+        <div id="projectColumn">
+            <div class="project">
+                <div class="projectImage" id="malaphorImage" alt="Image of a command line program with the words 'figure of speech' + 'turn of phrase' = 'turn of speech'">
+                    <div class="projectTitle">Malaphor generator</div>
                 </div>
+                <div class="projectText">
+                    <div class="projectBlurb">
+                        <p>A 'malaphor' is when two figures of speech are merged, like combining <em>"It's not brain surgery"</em> and <em>"It's not rocket science"</em> to get <em>"It's not rocket surgery."</em></p>
+                        <p>This command-line tool was made in Python. It generates malaphors based on proverbs, with priority given to semantically similar sayings.</p>
+                        </div>
+                    <div id="projectLinks">
+                        <a href="https://github.com/rachel-meadows/malaphor" target="_blank"><img src="img/github.png" id="github"></a>
+                        <button class="projectLink">View site</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectText">
+                    <div class="projectBlurb">
+                        <p>In a twist on an old classic, this tic-tac-toe game uses design elements to give character to the user's token - and the bot they play against.</p>
+                        <p>It was made using CSS, HTML, and vanilla JS.</p>
+                    </div>
+                    <div id="projectLinks">
+                        <a href="https://github.com/rachel-meadows/odin-project-tic-tac-toe" target="_blank"><img src="img/github.png" id="github"></a>
+                        <a href="https://rachel-meadows.github.io/odin-project-tic-tac-toe/" target=_blank""><button class="projectLink">View site</button></a>
+                    </div>
+                </div>
+                <div class="projectImage" id="tictactoeImage" alt="Image of a tic-tac-toe game in progress">
+                    <div class="projectTitle">Tic Tac Toe</div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="projectImage" id="etchImage" alt="Etch-a-sketch with a drawing of a rubber duck">
+                    <div class="projectTitle">Etch-a-sketch</div>
+                </div>
+                <div class="projectText">
+                    <div class="projectBlurb">
+                        <p>This retro Etch-a-Sketch lets users choose their colour and the size of the grid.</p>
+                        <p>It was made using CSS, HTML, and vanilla JS.</p>
+                    </div>
+                    <div id="projectLinks">
+                        <a href="https://github.com/rachel-meadows/odin-project-etch-a-sketch" target="_blank"><img src="img/github.png" id="github"></a>
+                        <a href="https://rachel-meadows.github.io/odin-project-etch-a-sketch/" target="_blank"><button class="projectLink">View site</button></a>
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html"><button>More projects</button></a>
+        </div>
     </div>
 
     <div id="about">
@@ -218,7 +217,7 @@
         <div id=aboutContent>
             <div>
                 <p class="aboutText">I have a Psychology BSc(Hons) from the University of Auckland. After spending 3 years working at an EdTech startup, I fell in love with software and retrained as a full-stack web developer at Enspiral Dev Academy.</p>
-                <p class="aboutText">In my free time, I enjoy reading about computational linguistics, playing D&D, weightlifting, and riding my motorbike. I'm also a volunteer trainer at Mania Sportsfighting Gym.</p>
+                <p class="aboutText">In my free time, I enjoy reading about computational linguistics, playing D&D, weightlifting, and hiking. I'm also a volunteer trainer at Mania Sportsfighting Gym.</p>
             </div>
             <div>
                 <h3 style="text-align: center;"></h3> <!-- If I want a title later -->
