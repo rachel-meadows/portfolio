@@ -15,10 +15,20 @@ a:clicked {
     color: #5805B1;
 }
 
-button:hover {
-    cursor: pointer;
+button {
+    background-color: #e92315;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: #E3170A;
+}
 
 #home {
     color: white;
@@ -65,7 +75,7 @@ h3 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 600;
     padding-bottom: 4vh;
 }
@@ -82,7 +92,7 @@ p {
 
 .navigation {
     display: none;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     background-color: #212327;
     color: #dbdbdb;
@@ -130,4 +140,8 @@ p {
     border-radius: 5px;
     opacity: 1;
     filter: grayscale(0)
+}
+
+br {
+    margin-bottom: 5vh;
 }
