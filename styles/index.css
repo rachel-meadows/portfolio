@@ -52,54 +52,17 @@
 }
 
 
-#projectColumn {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8vh;
-    margin-top: 10px;
-}
-
-.project {
-    box-shadow: 2px 2px 4px rgb(10, 10, 10);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background-color: #77ccbe;
-    border-radius: 4px;
-    gap: 10px;
-}
-
-.projectText {
-    display: flex;
-    width: 60%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-#projectLinks {
-    display: flex;
-    gap: 15px;
-}
-
-.projectBlurb p, .projectBlurb em {
-    padding-bottom: 5px;
-}
-
 /* Button */
 .projectLink {
     padding: 10px 20px;
     border: #E3170A solid 2px;
     background-color: #F5F1ED;
+    z-index: 3;
 }
 
 .projectLink:hover {
     background-color: hsla(4, 92%, 46%, 0.486);
+    cursor: pointer;
 }
 
 #malaphorImage {
@@ -114,43 +77,109 @@
     background-image: url("img/projects/etch_a_sketch.png");
 }
 
-.projectTitle {
-    width: 100%;
-    padding: 10px;
-    background-color: hsla(0, 0%, 0%, 0.95);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.3rem;
-    box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.4);
-}
-
-.projectImage {
-    width: 20vw;
-    height: 20vw;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    filter: grayscale(0.5)
-}
-
-.projectImage:hover {
-    filter: grayscale(0)    
-}
-
-.project:hover .projectImage {
-    filter: grayscale(0.1)    
-}
-
 #projects, #about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F5F1ED;
+}
+
+#about {
     padding: 5vw 15vw;
+}
+
+#projects {
+    padding: 5vw 20vw;
+}
+
+#projectGridContainer {
+    display: grid;
+    width: 100%;
+    height: 58vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2vw 0vw;
+    column-gap: 2vw;
+    row-gap: 2vw;
+    border: red 2px solid;
+}
+
+#malaphorThumbnail {
+    background-image: url(../img/projects/malaphor.png);
+    background-size: cover;
+}
+
+.projectThumbnail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: red;
+    padding-bottom: 3vw;
+}
+
+.projectDetails {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(29, 170, 147, 1);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vw;
+}
+
+.projectTitle {
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.projectLinks {
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.projectGithubLogo {
+    width: 45px;
+    background-image: url(../img/github.png);
+    background-size: cover;
+}
+
+.projectGithubLogo, .projectLink {
+    border-radius: 4px;
+    border: 2px solid #e92315;
+    height: 45px;
+}
+
+.projectGithubLogo:hover {
+    background-image: url(../img/githubHover.png);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+}
+
+.projectGridItem {
+    background-color: rgba(29, 170, 147, 0.6);
+    border: solid rgba(29, 170, 147, 1) 2px;
+    box-shadow: rgba(19, 19, 19, 0.8) 1px 2px 3px;
+    border-radius: 4px;
+    position: relative;
 }
 
 #about, #skills {
@@ -209,4 +238,13 @@
 
 .headerText, h1 {
     user-select: none;
+}
+
+.projectThumbnail:hover {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.hidden {
+    display: none;
 }
