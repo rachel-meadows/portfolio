@@ -30,13 +30,6 @@ button:hover {
     background-color: #E3170A;
 }
 
-#home {
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
 #subNavigation {
     z-index: 100;
     margin-top: 3.5vw;
@@ -56,6 +49,11 @@ button:hover {
 #menu {
     display: flex;
     gap: 5vw;
+}
+
+#menu a {
+    color: white;
+    font-weight: normal;
 }
 
 h1, #textShadow {

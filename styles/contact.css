@@ -1,0 +1,7 @@
+#nav-contact {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
