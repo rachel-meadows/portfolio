@@ -8,14 +8,14 @@
 
 #skills {
   background-color: #f5f1ed;
-  padding: 10vh 15vw;
+  padding: 5vw 20vw;
   text-align: center;
 }
 
 #technicalSkills,
 #businessSkills {
   display: grid;
-  gap: 4vh;
+  gap: 5vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .logo {
-  width: 4.5vw;
-  height: 4.5vw;
+  width: 7vw;
+  height: 7vw;
 }
 
 .skill {
@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  padding: 5px;
+  padding: 4vh 0;
 }
 
 .skillText {
@@ -88,13 +88,13 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 2vw 0vw 4vw 0vw;
-  column-gap: 3vw;
-  row-gap: 3vw;
+  gap: 3vw;
 }
 
 #malaphorThumbnail {
   background-image: url(../img/projects/malaphor.png);
   background-size: cover;
+  background-position: center;
 }
 
 #tictactoeImage {
@@ -275,36 +275,62 @@ video {
   height: 240px;
 }
 
-@media (max-width: 400px) {
-  br {
-    margin-bottom: 0vh;
+/* 1000px and above */
+@media (min-width: 1000px) {
+  #wrapper {
+    /* When there's space, a small amount of colour at bottom to encourage scrolling */
+    max-height: 95vh;
   }
-  .aboveTheFold {
-    padding: 5vh 7vw 0px 7vw;
+}
+
+/* 1000px and below */
+@media (max-width: 1000px) {
+  #wrapper {
+    min-height: 0px;
+  }
+
+  .skill {
+    padding: 2vh 0vh;
+  }
+
+  .logo {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  #technicalSkills,
+  #businessSkills {
+    display: grid;
     gap: 5vh;
   }
-  h1 {
-    font-size: 2.5em;
-  }
-  video {
-    width: 300px;
-    height: 200px;
-  }
 }
 
-@media (max-width: 600px) {
-  .aboveTheFold {
-    padding: 7vh 8vw 0px 8vw;
-  }
-  h1 {
-    font-size: 3em;
-  }
-}
-
+/* 800px */
 @media (max-width: 800px) {
   .aboveTheFold {
     padding: 7vh 10vw 0px 10vw;
     gap: 7vh;
+  }
+
+  #skills,
+  #projects,
+  #about {
+    padding: 7vh 5vw;
+  }
+
+  #aboutContent {
+    flex-direction: column;
+  }
+
+  #projects {
+    padding: 5vh 10vw;
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  .aboveTheFold {
+    padding: 7vh 8vw 0px 8vw;
   }
 
   #technicalSkills {
@@ -319,20 +345,47 @@ video {
     min-height: 400px;
   }
 
-  #skills,
-  #projects,
-  #about {
-    padding: 7vh 5vw;
+  h1 {
+    font-size: 3em;
   }
 
-  #aboutContent {
-    flex-direction: column;
+  .logo {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  #projectGridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5vw;
   }
 }
 
-@media (min-width: 1000px) {
-  #wrapper {
-    /* When there's space, a small amount of colour at bottom to encourage scrolling */
-    max-height: 95vh;
+/* 400px */
+@media (max-width: 400px) {
+  br {
+    margin-bottom: 4vh;
+  }
+  .aboveTheFold {
+    padding: 5vh 7vw 0px 7vw;
+    gap: 5vh;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  video {
+    width: 300px;
+    height: 200px;
+  }
+
+  #technicalSkills {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    min-height: 500px;
+  }
+
+  #businessSkills {
+    grid-template-columns: 1fr 1fr;
+    min-height: 400px;
   }
 }
