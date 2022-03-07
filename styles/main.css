@@ -1,145 +1,146 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-    color: #1838f0;
-    text-decoration: none;
-    font-weight: bold;
+  color: #1838f0;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:clicked {
-    color: #5805B1;
+  color: #5805b1;
 }
 
 button {
-    background-color: #e92315;
-    padding: 10px 25px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    font-weight: 600;
+  background-color: #e92315;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 button:hover {
-    cursor: pointer;
-    background-color: #E3170A;
+  cursor: pointer;
+  background-color: #e3170a;
 }
 
 #subNavigation {
-    z-index: 100;
-    margin-top: 3.5vw;
-    width: 100%;
-    background-color: rgb(26, 26, 26);
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0.5vw 5vw;
+  z-index: 100;
+  margin-top: 3.5vw;
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5vw 5vw;
 }
 
 #subMenu {
-    display: flex;
-    gap: 5vw;
+  display: flex;
+  gap: 5vw;
 }
 
 #menu {
-    display: flex;
-    gap: 5vw;
+  display: flex;
+  gap: 5vw;
 }
 
 #menu a {
-    color: white;
-    font-weight: normal;
+  color: white;
+  font-weight: normal;
 }
 
-h1, #textShadow {
-    font-size: 4rem;
-    font-family: "Open Sans";
+h1 {
+  font-size: 4rem;
+  font-family: 'Open Sans';
 }
 
 #textShadow {
-    color: #E3170A;
-    text-shadow: rgb(0, 0, 0) 1px 1px;
+  color: #e3170a;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding-bottom: 4vh;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 h2 {
-    font-size: 1.9rem;
-    font-weight: 600;
-    padding-bottom: 4vh;
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding-bottom: 4vh;
 }
 
 p {
-    font-size: 1.1rem;
-    padding-bottom: 5vh;
+  font-size: 1.1rem;
+  padding-bottom: 5vh;
 }
 
 #logo {
-    width: 32px;
-    padding-left: 10px;
+  width: 32px;
+  padding-left: 10px;
 }
 
 .navigation {
-    display: none;
-    z-index: 100;
-    width: 100%;
-    background-color: #212327;
-    color: #dbdbdb;
-    justify-content: right;
-    align-items: center;
-    padding: 0.7vw 5vw;
-    font-size: 1.2rem;
+  display: none;
+  z-index: 100;
+  width: 100%;
+  background-color: #212327;
+  color: #dbdbdb;
+  justify-content: right;
+  align-items: center;
+  padding: 0.7vw 5vw;
+  font-size: 1.2rem;
 }
 
 .sticky {
-    display: flex;
-    position: fixed;
-    top: 0;
-  }
+  display: flex;
+  position: fixed;
+  top: 0;
+}
 
 #footer {
-    background-color: black;
-    color: rgb(161, 161, 161);
-    justify-content: center;
-    align-items: center;
-    padding: 5vh 5vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 0.9rem;
-    font-weight: 400;
+  background-color: black;
+  color: rgb(161, 161, 161);
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .footerImages {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
-#github, #linkedin {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    opacity: 0.8;
-    filter: grayscale(0.1)
+#github,
+#linkedin {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  opacity: 0.8;
+  filter: grayscale(0.1);
 }
 
-#github:hover, #linkedin:hover {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    opacity: 1;
-    filter: grayscale(0)
+#github:hover,
+#linkedin:hover {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 br {
-    margin-bottom: 5vh;
+  margin-bottom: 5vh;
 }
