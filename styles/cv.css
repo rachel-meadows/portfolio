@@ -74,3 +74,29 @@ ul {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+
+/* 1000px */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  .bodyContainer {
+    padding: 8vh 15vw;
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  .bodyContainer {
+    padding: 8vh 10vw;
+  }
+}
