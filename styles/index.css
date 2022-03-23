@@ -97,6 +97,12 @@
   background-position: center;
 }
 
+#magnetsThumbnail {
+  background-image: url(../img/projects/magnets.png);
+  background-size: cover;
+  background-position: center;
+}
+
 #tictactoeImage {
   background-image: url(../img/projects/tictactoe.png);
   background-size: cover;
