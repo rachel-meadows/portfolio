@@ -30,28 +30,23 @@ button:hover {
   background-color: #e3170a;
 }
 
-#subNavigation {
-  z-index: 100;
-  margin-top: 3.5vw;
+.nav {
+  display: flex;
   width: 100%;
-  background-color: rgb(26, 26, 26);
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0.5vw 5vw;
+  background-color: #212327;
+  color: #dbdbdb;
+  justify-content: right;
+  align-items: center;
+  padding: 0.7vw 5vw;
+  font-size: 1.2rem;
 }
 
-#subMenu {
-  display: flex;
-  gap: 5vw;
-}
-
-#menu {
+.nav__menu {
   display: flex;
   gap: 5vw;
 }
 
-#menu a {
+.nav__menu a {
   color: white;
   font-weight: normal;
 }
@@ -59,11 +54,6 @@ button:hover {
 h1 {
   font-size: 4rem;
   font-family: 'Open Sans';
-}
-
-#textShadow {
-  color: #e3170a;
-  text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
 h3 {
@@ -82,30 +72,7 @@ p {
   padding-bottom: 5vh;
 }
 
-#logo {
-  width: 32px;
-  padding-left: 10px;
-}
-
-.navigation {
-  display: none;
-  z-index: 100;
-  width: 100%;
-  background-color: #212327;
-  color: #dbdbdb;
-  justify-content: right;
-  align-items: center;
-  padding: 0.7vw 5vw;
-  font-size: 1.2rem;
-}
-
-.sticky {
-  display: flex;
-  position: fixed;
-  top: 0;
-}
-
-#footer {
+.footer {
   background-color: black;
   color: rgb(161, 161, 161);
   justify-content: center;
@@ -117,14 +84,14 @@ p {
   font-weight: 400;
 }
 
-.footerImages {
+.footer__images {
   display: flex;
   justify-content: center;
   gap: 25px;
 }
 
-#github,
-#linkedin {
+.footer__linkedinLogo,
+.footer__githubLogo {
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -132,8 +99,8 @@ p {
   filter: grayscale(0.1);
 }
 
-#github:hover,
-#linkedin:hover {
+.footer__githubLogo:hover,
+.footer__linkedinLogo:hover {
   width: 30px;
   height: 30px;
   border-radius: 5px;
