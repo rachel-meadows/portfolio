@@ -24,72 +24,51 @@
     </div>
   </div>
 
-    <div id="body-container">
-
+  
+  <div class="wrapper">
       <h1>Portfolio</h1>
   
-      <div id="tags-container">
-        <div id="tags-all" class="tag tag-filtering">Show all</div>
-        <div id="tags-html" class="tag">HTML5</div>
-        <div id="tags-css" class="tag">CSS</div>
-        <div id="tags-javascript" class="tag">JavaScript</div>
-        <div id="tags-sql" class="tag">SQL</div>
-        <div id="tags-python" class="tag">Python</div>
-        <div id="tags-rest-api" class="tag">REST API</div>
-        <div id="tags-react" class="tag">React</div>
-        <div id="tags-redux" class="tag">Redux</div>
-        <div id="tags-expressjs" class="tag">Express.js</div>
-        <div id="tags-nodejs" class="tag">Node.js</div>
-        <div id="tags-flask" class="tag">Flask</div>
+      <div class="tags">
+        <div id="tags-all" class="tags__tag tags__tag--active">Show all</div>
+        <div id="tags-html" class="tags__tag">HTML</div>
+        <div id="tags-css" class="tags__tag">CSS</div>
+        <div id="tags-javascript" class="tags__tag">JavaScript</div>
+        <div id="tags-sql" class="tags__tag">SQL</div>
+        <div id="tags-python" class="tags__tag">Python</div>
+        <div id="tags-rest-api" class="tags__tag">REST API</div>
+        <div id="tags-react" class="tags__tag">React</div>
+        <div id="tags-redux" class="tags__tag">Redux</div>
+        <div id="tags-expressjs" class="tags__tag">Express.js</div>
+        <div id="tags-nodejs" class="tags__tag">Node.js</div>
+        <div id="tags-flask" class="tags__tag">Flask</div>
       </div>
   
-      <div id="project-grid-container">
+      <div class="projects">
 
-        <div class="projectGridItem">
-          <div class="projectTitle">Malaphor generator</div>
-          <div class="thumbnail-size">
-            <div class="projectThumbnail" id="malaphorThumbnail">
-            </div>
-            <div class="project-tag-container">
-              <div class="project-tag">Python</div>
-              <div class="project-tag">Flask</div>
-              <div class="project-tag">REST API</div>
-              <div class="project-tag">HTML</div>
-              <div class="project-tag">CSS</div>
-            </div>
-          </div>
-          <div class="projectDetails">
-            <p>A 'malaphor' is when two figures of speech are merged, like mixing
-              <em>"It's not brain surgery"</em> and <em>"It's not rocket
-                science"</em> to get <em>"It's not rocket surgery."</em>
-            </p>
-            <p>This command-line tool was made using Python and Flask. It generates malaphors
-              based on proverbs, with priority given to semantically similar
-              sayings.</p>
+        <div class="project">
+          <div class="project__title">Malaphor generator</div>
+          <div class="project__subtitle">A mixed metaphor generator to create unusual new idioms.</div>
+          <div class="project__tags">
+            <div class="project__tag">Python</div>
+            <div class="project__tag">Flask</div>
+            <div class="project__tag">Web scraping</div>
+            <div class="project__tag">HTML</div>
+            <div class="project__tag">CSS</div>
           </div>
         </div>
 
 
-        <div class="projectGridItem">
-          <div class="projectTitle">Etch-a-sketch</div>
-          <div class="thumbnail-size">
-            <div class="projectThumbnail" id="etchThumbnail">
-            </div>
-            <div class="project-tag-container">
-              <div class="project-tag">JavaScript</div>
-              <div class="project-tag">HTML</div>
-              <div class="project-tag">CSS</div>
-            </div>
-          
-          </div>
-          <div class="projectDetails">
-            <p>This retro Etch-a-Sketch lets users choose their colour and the size
-              of the grid.</p>
-            <p>It was made using CSS, HTML, and vanilla JS.</p>
+        <div class="project">
+          <div class="project__title">Etch-a-sketch</div>
+          <div class="project__subtitle">This retro Etch-a-Sketch lets users choose their brush colour and the size of the grid.</div>
+          <div class="project__tags">
+            <div class="project__tag">JavaScript</div>
+            <div class="project__tag">HTML</div>
+            <div class="project__tag">CSS</div>
           </div>
         </div>
-  
       </div>
+      
     </div>
 
   <div class="footer">
@@ -104,7 +83,7 @@
     </div>
   </div>
 
-    <script src="script.js"></script>
+  <script src="scripts/projects.js"></script>
 </body>
 
 </html>
