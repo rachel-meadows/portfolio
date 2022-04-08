@@ -112,3 +112,9 @@ p {
 br {
   margin-bottom: 5vh;
 }
+
+.navigation--active {
+  font-weight: 600;
+}
+
+

@@ -23,9 +23,9 @@ function makeNavSticky() {
 }
 
 // Load particles for header
-particlesJS.load('particles-js', 'particles.json', function () {
-  console.log('Particles-js config loaded correctly')
-})
+// particlesJS.load('particles-js', 'particles.json', function () {
+//   console.log('Particles-js config loaded correctly')
+// })
 
 this.gridButtonItems.forEach(function (item, idx) {
   item.addEventListener('click', function () {
