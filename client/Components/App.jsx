@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+
 import Home from './Home'
 import Projects from './Projects'
 import Footer from './Footer'
@@ -8,7 +9,7 @@ import Contact from './Contact'
 
 import projectsData from '../../data/projects.js' 
 
-const App = () => {
+function App() {
   return (
     <>  
       <Routes>
