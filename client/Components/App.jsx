@@ -13,7 +13,7 @@ function App() {
   return (
     <>  
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home data={projectsData}/>} />
         <Route path='/projects' element={<Projects data={projectsData}/>} />
         <Route path='/cv' element={<CV/>} />
         {/* <Route path='/projects/:project' element={<Country data={countryData}/>}></Route> */}

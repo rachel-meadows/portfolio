@@ -95,7 +95,7 @@
 }
 
 .home__projects {
-  padding: 5vw 20vw;
+  padding: 5vh 10vw;
 }
 
 .home__projects__grid {
@@ -293,6 +293,12 @@ h1 {
   display: none;
 }
 
+.home__about__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
 video {
   width: 400px;
   height: 240px;
@@ -410,4 +416,8 @@ video {
     grid-template-columns: 1fr 1fr;
     min-height: 400px;
   }
+}
+
+.home__projects__project {
+  background-color: rgba(29, 170, 147, 0.6);
 }

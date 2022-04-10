@@ -26,7 +26,7 @@ function Projects(props) {
           <div id="tags-flask" className="tags__tag">Flask</div>
         </div>
 
-        <div className="projects">
+        <div className="projects__grid">
           { projectArray.map( project => {
             return <Project key={project.name} data={project} />
           }) }

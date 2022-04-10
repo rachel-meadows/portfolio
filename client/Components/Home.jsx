@@ -1,8 +1,9 @@
 import React from 'react'
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
+import Project from './Project'
 
-const Home = () => {
+function Home(props) {
 
   // TODO: re-implement these, but using React style
 
@@ -24,11 +25,13 @@ const Home = () => {
   // function makeNavSticky() {
   //   let home__headerHeight = home__header.offsetHeight
   //   if (window.pageYOffset > home__headerHeight - 10) {
-  //     nav.classList.add('nav--sticky')
-  //   } else {
+    //     nav.classList.add('nav--sticky')
+    //   } else {
   //     nav.classList.remove('nav--sticky')
   //   }
   // }
+  
+  let selectedProjectsNames = ['malaphor', 'fridge-magnets', 'etch-a-sketch', 'would-you-rather']
 
   return (
     <>        
@@ -156,68 +159,12 @@ const Home = () => {
         <div className="home__projects">
             <h2>Selected Projects</h2>
             <div className="home__projects__grid">
-
-                <div className="home__projects__item">
-                    <div className="home__projects__links">
-                        <a href="https://github.com/rachel-meadows/malaphor" target="_blank" rel="noreferrer"><div className="project__github"></div></a>
-                        <button className="home__projects__siteLink">View site</button>
-                    </div>
-                    <div className="project__title">Malaphor generator</div>
-                    <div className="project__thumbnail" id="malaphorThumbnail"></div>
-                    <div className="project__details">
-                        <p>A &apos;malaphor&apos; is when two figures of speech are merged, like mixing
-                        <em>&apos;It&apos;s not brain surgery&apos;</em> and <em>&apos;It&apos;s not rocket
-                        science&apos;</em> to get <em>&apos;It&apos;s not rocket surgery.&apos;</em>
-                        </p>
-                        <p>This command-line tool was made using Python and Flask. It generates malaphors based on proverbs, with priority given to semantically similar
-                        sayings.</p>
-                    </div>
-                </div>
-
-                <div className="home__projects__item">
-                    <div className="home__projects__links">
-                        <a href="#" target="_blank"><div className="project_github"></div></a>
-                        <button className="home__projects__siteLink">View site</button>
-                    </div>
-                    <div className="project__title">Fridge magnet poetry</div>
-                    <div className="project__thumbnail" id="magnetsThumbnail">
-                    </div>
-                    <div className="project__details">
-                        <p>Fridge magnets are a popular way to make a living space more creative. This app / plugin, made in x / y / z, does [$thing].</p>
-                        <p>(Since this is my best hope of social growth, mention user numbers and it being an exercise in scalable architecture here).</p>
-                    </div>
-                </div>
-
-                <div className="home__projects__item">
-                    <div className="home__projects__links">
-                        <a href="https://github.com/rachel-meadows/odin-project-tic-tac-toe" target="_blank" rel="noreferrer"><div className="project__github"></div></a>
-                        <a href="https://rachel-meadows.github.io/odin-project-tic-tac-toe/" target="_blank" rel="noreferrer"><button className="home__projects__siteLink">View site</button></a>
-                    </div>
-                    <div className="project__title">Tic-tac-toe</div>
-                    <div className="project__thumbnail" id="tictactoeImage"></div>
-                    <div className="project__details">
-                        <p>In a twist on an old classic, this tic-tac-toe game uses design
-                            elements to give character to the user&apos;s token - and the bot they
-                            play against.</p>
-                        <p>It was made using CSS, HTML, and vanilla JS.</p>
-                    </div>
-                </div>
-
-                <div className="home__projects__item">
-                    <div className="home__projects__links">
-                        <a href="https://github.com/rachel-meadows/odin-project-etch-a-sketch" target="_blank" rel="noreferrer"><div className="project__github"></div></a>
-                        <a href="https://rachel-meadows.github.io/odin-project-etch-a-sketch/"><button className="home__projects__siteLink">View site</button></a>
-                    </div>
-
-                    <div className="project__title">Etch-a-sketch</div>
-                    <div className="project__thumbnail" id="etchImage"></div>
-
-                    <div className="project__details">
-                        <p>This retro Etch-a-Sketch lets users choose their colour and the size
-                            of the grid.</p>
-                        <p>It was made using CSS, HTML, and vanilla JS.</p>
-                    </div>
-                </div>
+                {
+                  props.data.filter(project => selectedProjectsNames.includes(project.name)).map( project => {
+                    console.log(project)
+                    return <Project key={project.name} data={project} className='home__projects__project'/>
+                  })
+                }
             </div>
             <Link to={'/projects'}><button>More Projects</button></Link>
         </div>
@@ -225,6 +172,7 @@ const Home = () => {
         <div className="home__about">
           <h2>About Me</h2>
           <div className="home__about__wrapper">
+
             <div>
               <p className="home__about_text">
                 I have a Psychology BSc(Hons) from the University of Auckland.
@@ -235,11 +183,12 @@ const Home = () => {
                 In my free time, I enjoy reading about computational linguistics, playing D&#38;D, weightlifting, and hiking. I&apos;m also a volunteer trainer at Mania Sportsfighting Gym.
               </p>
             </div>
-          </div>
-          <div>
-            <video controls>
-              <source src="#" type="video/mp4"/>
-            </video>
+
+            <div>
+              <video controls>
+                <source src="#" type="video/mp4"/>
+              </video>
+            </div>
           </div>
           <a href="/contact.html"><button id="contact">Let&apos;s talk</button></a>
         </div>
