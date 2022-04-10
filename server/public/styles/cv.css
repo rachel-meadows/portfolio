@@ -24,11 +24,11 @@ h2 {
   font-family: 'Open Sans';
 }
 
-li {
+/* li {
   line-height: 1.1;
   padding-bottom: 7px;
   margin-left: 10vh;
-}
+} */
 
 .noIndent {
   margin-left: 0px;
@@ -66,9 +66,9 @@ h5 {
   margin-bottom: 7px;
 }
 
-ul {
+/* ul {
   margin-bottom: 15px;
-}
+} */
 
 .spaceBelow {
   margin-top: 5px;

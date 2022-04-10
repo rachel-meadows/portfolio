@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .nav--hidden {
   display: none;
 }
@@ -16,30 +20,30 @@
   user-select: none;
 }
 
-.header--textShadow {
+.home__header--textShadow {
   color: #e3170a;
   text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
-.skills {
+.home__skills {
   background-color: #f5f1ed;
   padding: 5vw 20vw;
   text-align: center;
 }
 
-.skills__technical,
-.skills__business {
+.home__skills__technical,
+.home__skills__business {
   display: grid;
   gap: 5vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.skills__technical {
+.home__skills__technical {
   grid-template-rows: 1fr 1fr 1fr;
   min-height: 300px;
 }
 
-.skills__business {
+.home__skills__business {
   grid-template-rows: 1fr 1fr;
   min-height: 200px;
 }
@@ -49,7 +53,7 @@
   height: 7vw;
 }
 
-.skills__skill {
+.home__skills__skill {
   border: solid rgba(19, 19, 19, 0.5) 1px;
   box-shadow: rgba(19, 19, 19, 0.8) 1px 2px 3px;
   background-color: rgba(255, 255, 255, 1);
@@ -69,20 +73,20 @@
 }
 
 /* Button */
-.projects__siteLink {
+.home__projects__siteLink {
   padding: 10px 20px;
   border: #e3170a solid 2px;
   background-color: #f5f1ed;
   z-index: 3;
 }
 
-.projects__siteLink:hover {
+.home__projects__siteLink:hover {
   background-color: hsla(4, 92%, 46%, 0.486);
   cursor: pointer;
 }
 
-.projects,
-.about {
+.home__projects,
+.home__about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,15 +94,15 @@
   background-color: #f5f1ed;
 }
 
-.about {
+.home__about {
   padding: 5vw 15vw;
 }
 
-.projects {
-  padding: 5vw 20vw;
+.home__projects {
+  padding: 5vh 10vw;
 }
 
-.projects__grid {
+.home__projects__grid {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
@@ -107,7 +111,7 @@
   gap: 3vw;
 }
 
-.projects__item {
+.home__projects__item {
   background-color: rgba(29, 170, 147, 0.6);
   box-shadow: rgba(19, 19, 19, 0.8) 0px 3px 5px;
   border-radius: 4px;
@@ -118,28 +122,28 @@
 }
 
 #malaphorThumbnail {
-  background-image: url(../img/projects/malaphor.png);
+  background-image: url(/images/home__projects/malaphor.png);
   background-size: cover;
   background-position: center;
 }
 
 #magnetsThumbnail {
-  background-image: url(../img/projects/magnets.png);
+  background-image: url(/images/home__projects/magnets.png);
   background-size: cover;
   background-position: center;
 }
 
 #tictactoeImage {
-  background-image: url(../img/projects/tictactoe.png);
+  background-image: url(/images/home__projects/tictactoe.png);
   background-size: cover;
 }
 
 #etchImage {
-  background-image: url(../img/projects/etch_a_sketch.png);
+  background-image: url(/images/home__projects/etch_a_sketch.png);
   background-size: cover;
 }
 
-.projects__links {
+.home__projects__links {
   background-color: #77ccbe;
   width: 100%;
   left: 50;
@@ -203,12 +207,12 @@
 
 .project__github {
   width: 40px;
-  background-image: url(../img/github.png);
+  background-image: url(/images/github.png);
   background-size: cover;
 }
 
 .project__github,
-.projects__siteLink {
+.home__projects__siteLink {
   background-color: #f5f1ed;
   border-radius: 4px;
   border: 1px solid #e92315;
@@ -216,18 +220,18 @@
 }
 
 .project_github:hover {
-  background-image: url(../img/githubHover.png);
+  background-image: url(/images/githubHover.png);
   background-size: cover;
   width: 40px;
   height: 40px;
 }
 
-.about,
-.skills {
+.home__about,
+.home__skills {
   background-color: rgba(29, 170, 147, 0.6);
 }
 
-.about_text {
+.home__about_text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -239,15 +243,22 @@
   text-align: center;
 }
 
-.header {
+.home__header {
   width: 100%;
-  height: 100%;
+  height: 96%;
   min-height: 95vh;
   position: relative;
   padding-bottom: 7vh;
+  background-color: black;
+  background: radial-gradient(rgb(20, 20, 20), black);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
-.header__textWrapper {
+.home__header__textWrapper {
   padding: 10vh 20vw 0px 20vw;
   height: 100%;
   color: white;
@@ -260,26 +271,15 @@
   position: relative;
 }
 
-#particles-js {
-  background-color: black;
-  background: radial-gradient(rgb(20, 20, 20), black);
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.header__more {
+.home__header__more {
   border: none;
 }
 
-.header__more:hover {
+.home__header__more:hover {
   border: none;
 }
 
-.header__text,
+.home__header__text,
 h1 {
   user-select: none;
 }
@@ -293,6 +293,12 @@ h1 {
   display: none;
 }
 
+.home__about__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
 video {
   width: 400px;
   height: 240px;
@@ -300,67 +306,68 @@ video {
 
 /* 1000px and above */
 @media (min-width: 1000px) {
-  .header {
+  .home__
+  header {
     /* When there's space, a small amount of colour at bottom to encourage scrolling */
     max-height: 95vh;
   }
 }
 
 /* 1000px and below */
-.header {
+.home__header {
   min-height: 0px;
 }
 
-.skills__skill {
+.home__skills__skill {
   padding: 1.5vh 0vh;
 }
 
 .logo {
-  width: 10vw;
-  height: 10vw;
+  max-width: 10vw;
+  max-height: 10vw;
 }
 
-.skills__technical,
-.skills__business {
+.home__skills__technical,
+.home__skills__business {
   display: grid;
   gap: 5vh;
 }
 
 /* 800px */
 @media (max-width: 800px) {
-  .header__textWrapper {
+  .home__header__textWrapper {
     padding: 7vh 10vw 0px 10vw;
     gap: 7vh;
   }
 
-  .skills,
-  .projects,
-  .about {
+  .home__skills,
+  .home__projects,
+  .home__about {
     padding: 7vh 5vw;
   }
 
-  .about__wrapper {
+  .home__about__wrapper {
     flex-direction: column;
   }
 
-  .projects {
+  .home__projects {
     padding: 5vh 10vw;
   }
 }
 
 /* 600px */
 @media (max-width: 600px) {
-  .header__textWrapper {
+  .home__header__textWrapper {
     padding: 7vh 8vw 0px 8vw;
   }
 
-  .skills__technical {
+  .home__skills__technical {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-height: 400px;
   }
 
-  .skills__business {
+  .home__skills__business {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-height: 400px;
@@ -375,7 +382,7 @@ video {
     height: 15vw;
   }
 
-  .projects__grid {
+  .home__projects__grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 5vw;
@@ -387,7 +394,7 @@ video {
   br {
     margin-bottom: 4vh;
   }
-  .header__textWrapper {
+  .home__header__textWrapper {
     padding: 5vh 7vw 0px 7vw;
     gap: 5vh;
   }
@@ -399,14 +406,18 @@ video {
     height: 200px;
   }
 
-  .skills__technical {
+  .home__skills__technical {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     min-height: 500px;
   }
 
-  .skills__business {
+  .home__skills__business {
     grid-template-columns: 1fr 1fr;
     min-height: 400px;
   }
+}
+
+.home__projects__project {
+  background-color: rgba(29, 170, 147, 0.6);
 }
