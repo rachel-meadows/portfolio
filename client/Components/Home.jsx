@@ -1,58 +1,108 @@
-import React from 'react'
+import React, { useRef } from "react";
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
 import Project from './Project'
+import Particles from 'react-tsparticles'
 
 function Home(props) {
-
-  // TODO: re-implement these, but using React style
-
-  // const home__skills = document.querySelector('.home__skills__technical')
-  // const nav = document.querySelector('.nav')
-  // const readMore = document.querySelector('.home__header__more')
-  // const home__header = document.querySelector('.home__header')
-
-  // // Index.html scroll button
-  // function scrollToContent() {
-  //   home__skills.scrollIntoView({ behavior: 'smooth' })
-  // }
-  // readMore.addEventListener('click', scrollToContent)
-
-  // // Sticky navigation
-  // window.onscroll = function () {
-  //   makeNavSticky()
-  // }
-  // function makeNavSticky() {
-  //   let home__headerHeight = home__header.offsetHeight
-  //   if (window.pageYOffset > home__headerHeight - 10) {
-    //     nav.classList.add('nav--sticky')
-    //   } else {
-  //     nav.classList.remove('nav--sticky')
-  //   }
-  // }
-  
+  // Projects to highlight
   let selectedProjectsNames = ['malaphor', 'fridge-magnets', 'etch-a-sketch', 'would-you-rather']
+  
+  // Index page scroll button
+  const myRef = useRef(null)
+  const executeScroll = () => myRef.current.scrollIntoView()    
 
   return (
-    <>        
+    <>
+      {/* TODO: Add state so navigation only shows on scroll  */}
       <Navigation/>
-        <div className="home__header">
-            <div className="home__header__textWrapper">
-                <h1>Hi, I&apos;m <span className="home__header--textShadow">Rachel</span>.</h1>
-                <div>
-                  <h3 className="home__header__text">I&apos;m a junior <strong>full-stack developer</strong>, with 3
-                      years experience in a product management and operations role.</h3>
-                      <br></br>
-                  <h3 className="home__header__text">If you need a developer who&apos;s as happy talking to clients
-                      and prioritizing requirements as writing code, let&apos;s <strong><a href="contact.html">have a chat</a></strong>.
-                  </h3>
-                </div>
-                <button className="home__header__more">Find out more ▼</button>
+        <div>
+        <div className="home__header__textWrapper">
+            <h1>Hi, I&apos;m <span className="home__header--textShadow">Rachel</span>.</h1>
+            <div>
+              <h3 className="home__header__text">I&apos;m a junior <strong>full-stack developer</strong>, with 3
+                  years experience in a product management and operations role.</h3>
+                  <br></br>
+              <h3 className="home__header__text">If you need a developer who&apos;s as happy talking to clients
+                  and prioritizing requirements as writing code, let&apos;s <Link to={'/contact'}><strong>have a chat</strong></Link>.
+              </h3>
             </div>
-            <div id="particles-js"></div>
+            <button className="home__header__more" onClick={executeScroll}>Find out more ▼</button>
+        </div>
+        <Particles className="home__header" id="tsParticles" width={"100%"} height={"100%"} style={{position: "static !important"}} options={{
+          fpsLimit: 120,
+          fullScreen: {
+            enable: false
+          },
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 150,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.4,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: true,
+              speed: 3,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.4,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 4 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
         </div>
 
-        <div className="home__skills">
+        <div className="home__skills" ref={myRef}>
             <h2>Technical Skills</h2>
                 <div className="home__skills__technical">
                   <div className="home__skills__skill">
@@ -161,7 +211,6 @@ function Home(props) {
             <div className="home__projects__grid">
                 {
                   props.data.filter(project => selectedProjectsNames.includes(project.name)).map( project => {
-                    console.log(project)
                     return <Project key={project.name} data={project} className='home__projects__project'/>
                   })
                 }
@@ -179,6 +228,7 @@ function Home(props) {
                 After spending 3 years working at SaaS eLearning startup, I fell in love with
                 software and retrained as a full-stack web developer at Enspiral Dev Academy.
               </p>
+              <br/>
               <p className="home__about__text">
                 In my free time, I enjoy reading about computational linguistics, playing D&#38;D, weightlifting, and hiking. I&apos;m also a volunteer trainer at Mania Sportsfighting Gym.
               </p>
@@ -190,7 +240,7 @@ function Home(props) {
               </video>
             </div>
           </div>
-          <a href="/contact.html"><button id="contact">Let&apos;s talk</button></a>
+          <Link to={'/contact'}><button  id="contact">Let&apos;s talk</button></Link>
         </div>
     </>
   )

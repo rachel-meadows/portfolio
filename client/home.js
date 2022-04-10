@@ -1,13 +1,5 @@
-const skills = document.querySelector('.skills__technical')
 const nav = document.querySelector('.nav')
-const readMore = document.querySelector('.header__more')
 const header = document.querySelector('.header')
-
-// Index.html scroll button
-function scrollToContent() {
-  skills.scrollIntoView({ behavior: 'smooth' })
-}
-readMore.addEventListener('click', scrollToContent)
 
 // Sticky navigation
 window.onscroll = function () {
@@ -21,14 +13,3 @@ function makeNavSticky() {
     nav.classList.remove('nav--sticky')
   }
 }
-
-// Load particles for header
-// particlesJS.load('particles-js', 'particles.json', function () {
-//   console.log('Particles-js config loaded correctly')
-// })
-
-this.gridButtonItems.forEach(function (item, idx) {
-  item.addEventListener('click', function () {
-    self._showContent(idx)
-  })
-})
