@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
-import Project from './Project'
+import ProjectCard from './ProjectCard'
 import Particles from 'react-tsparticles'
 
 function Home(props) {
@@ -10,7 +10,7 @@ function Home(props) {
   
   // Index page scroll button
   const myRef = useRef(null)
-  const executeScroll = () => myRef.current.scrollIntoView()    
+  const executeScroll = () => myRef.current.scrollIntoView({behavior: "smooth"})    
 
   return (
     <>
@@ -211,7 +211,11 @@ function Home(props) {
             <div className="home__projects__grid">
                 {
                   props.data.filter(project => selectedProjectsNames.includes(project.name)).map( project => {
-                    return <Project key={project.name} data={project} className='home__projects__project'/>
+                    return (
+                      <Link key={project.name} to={`/projects/${project.name}`} class="home__project__link">
+                        <ProjectCard key={project.name} data={project} className='home__projects__project'/>
+                      </Link>
+                    )
                   })
                 }
             </div>

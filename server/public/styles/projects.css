@@ -75,9 +75,10 @@ h1 {
   grid-template-columns: 0.4fr 0.6fr;
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  height: 100%;
 }
 
-.home__projects__grid > .project__project {
+.home__project__link > .project__project {
   background-color: rgba(29, 170, 147, 0.6);
 }
 
@@ -103,6 +104,7 @@ h1 {
   align-items: center;
   text-align: center;
   gap: 10px;
+  color: black;
 }
 
 .project__project__title {

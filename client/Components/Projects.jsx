@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from './Navigation'
-import Project from './Project'
+import ProjectCard from './ProjectCard'
+import { Link } from 'react-router-dom'
 
 function Projects(props) {
   const projectArray = props.data
@@ -26,11 +27,15 @@ function Projects(props) {
           <div id="tags-flask" className="tags__tag">Flask</div>
         </div>
 
-        <div className="projects__grid">
-          { projectArray.map( project => {
-            return <Project key={project.name} data={project} />
-          }) }
-        </div>
+          <div className="projects__grid">
+            { projectArray.map( project => {
+              return (
+                <Link key={project.name} to={`/projects/${project.name}`}>
+                  <ProjectCard key={project.name} data={project} />
+                </Link>
+              )}
+            )}
+          </div>
         
       </div>
     </>
