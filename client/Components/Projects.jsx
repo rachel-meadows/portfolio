@@ -9,8 +9,10 @@ function Projects(props) {
 
   function filterProjects(event) {
     const tech = event.target.textContent
-    // event.target.className.remove('tags__tag--active')
-    event.target.className.add('tags__tag--active')
+
+    event.target.parentNode.childNodes.forEach(tag => tag.classList.remove('tags__tag--active'))
+    event.target.classList.add('tags__tag--active')
+
     if (tech === 'Show all') {
       return setvisibleProjects(projectArray);
     }
