@@ -1,4 +1,5 @@
 import React from "react";
+import Slideshow from './Slideshow'
 
 function ProjectNoVideo({ project }) {
   return (
@@ -7,13 +8,9 @@ function ProjectNoVideo({ project }) {
         {/* Description */}
         <div className='singleProject__description'>{project.description}</div>
 
-        {/* TODO: Gallery */}
+        {/* Gallery */}
         <div className='singleProject__gallery'>
-          { project.gallery ? project.gallery.map(image => {
-            return <div className='singleProject__image' key={image} 
-            style={{backgroundImage: `url('/images/projects/${image}')`}}></div>
-            }) : <>Looks like there are no images for this project!</>
-          }
+          <Slideshow data={project}/>
         </div>
      </div>
     </>
