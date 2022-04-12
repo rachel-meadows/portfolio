@@ -1,17 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Navigation() {
+function Navigation( { computedClass }) {
 
   let activeStyle = {
     fontWeight: "600",
   };
 
+  console.log(computedClass);
   return (
     <>
-    <div className="nav">
+      <div className={`nav ${computedClass ? computedClass : 'nav--sticky'}`}>
       <ul className="nav__menu">
-        
         <li><NavLink to={'/'} style={({ isActive }) =>
               isActive ? activeStyle : undefined}>
                 Home

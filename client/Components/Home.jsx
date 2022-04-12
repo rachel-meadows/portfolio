@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
 import ProjectCard from './ProjectCard'
@@ -13,13 +13,30 @@ function Home(props) {
   const myRef = useRef(null)
   const executeScroll = () => myRef.current.scrollIntoView({behavior: "smooth"})    
 
+  // Show sticky nav when user scrolls beyond the height of the header
+  const [stickyNav, setStickyNav] = useState(false);
+  const header = useRef(null)
+  const handleScroll = () => {
+    const headerPosition = header.current.offsetHeight;
+    if (window.pageYOffset > headerPosition - 10) {
+      setStickyNav(true)
+    } else {
+      setStickyNav(false)
+    }
+  };
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
+
   return (
     <>
       <ScrollToTop />
-      {/* TODO: Add state so navigation only shows on scroll  */}
-      <Navigation/>
+      <Navigation computedClass={stickyNav ? "nav--sticky" : "nav--hidden"}/>
         <div>
-        <div className="home__header__textWrapper">
+        <div className="home__header__textWrapper" ref={header}>
             <h1>Hi, I&apos;m <span className="home__header--textShadow">Rachel</span>.</h1>
             <div>
               <h3 className="home__header__text">I&apos;m a junior <strong>full-stack developer</strong>, with 3
