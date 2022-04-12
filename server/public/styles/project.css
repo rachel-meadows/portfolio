@@ -48,6 +48,8 @@
   font-size: 1.2rem;
   white-space: pre-line;
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .singleProject__noVideoWrapper, .singleProject__withVideoWrapper {

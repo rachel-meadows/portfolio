@@ -90,7 +90,7 @@ export default [
       'would_you_rather_3.png',
     ],
     githubLink: 'https://github.com/rachel-meadows/would-you-rather',
-    siteLink: 'would-you-rather-site.herokuapp.com',
+    siteLink: 'https://would-you-rather-site.herokuapp.com',
   },
   {
     active: true,

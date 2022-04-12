@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import ProjectNavigation from './ProjectNavigation'
 import ProjectWithVideo from './ProjectWithVideo'
 import ProjectNoVideo from './ProjectNoVideo'
-
+import ScrollToTop from './ScrollToTop'
 
 function Project({ data }) {
   const projectName = useParams().project
@@ -11,6 +11,7 @@ function Project({ data }) {
 
   return (
     <>
+      <ScrollToTop />
       <ProjectNavigation />
       <div className="singleProject__wrapper">
 

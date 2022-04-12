@@ -3,6 +3,7 @@ import Navigation from './Navigation'
 import { Link } from 'react-router-dom'
 import ProjectCard from './ProjectCard'
 import Particles from 'react-tsparticles'
+import ScrollToTop from "./ScrollToTop";
 
 function Home(props) {
   // Projects to highlight
@@ -14,6 +15,7 @@ function Home(props) {
 
   return (
     <>
+      <ScrollToTop />
       {/* TODO: Add state so navigation only shows on scroll  */}
       <Navigation/>
         <div>

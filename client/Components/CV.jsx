@@ -1,9 +1,11 @@
 import React from 'react'
 import Navigation from './Navigation'
+import ScrollToTop from './ScrollToTop'
 
 function CV() {
   return (
     <>
+      <ScrollToTop />
       <Navigation />
       <div className="bodyContainer">
         <h1>Rachel Meadows</h1>

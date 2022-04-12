@@ -1,9 +1,11 @@
 import React from 'react'
 import Navigation from './Navigation'
+import ScrollToTop from './ScrollToTop'
 
 function Contact() {
 return (
   <>
+    <ScrollToTop />
     <Navigation />
     <div className="contact">
         <h1>Get in touch</h1>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navigation from './Navigation'
 import ProjectCard from './ProjectCard'
+import ScrollToTop from './ScrollToTop'
 import { Link } from 'react-router-dom'
 
 function Projects(props) {
@@ -22,6 +23,7 @@ function Projects(props) {
 
   return (
     <>
+      <ScrollToTop />
       <Navigation />
         
       <div className="projects__wrapper">
