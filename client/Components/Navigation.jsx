@@ -7,7 +7,6 @@ function Navigation( { computedClass }) {
     fontWeight: "600",
   };
 
-  console.log(computedClass);
   return (
     <>
       <div className={`nav ${computedClass ? computedClass : 'nav--sticky'}`}>

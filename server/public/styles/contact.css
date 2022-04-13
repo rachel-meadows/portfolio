@@ -38,11 +38,13 @@ form {
 .short {
   width: fit-content;
   padding: 5px 10px;
+  min-width: 25vw;
 }
 
 textarea {
   padding: 5px 10px;
   height: 30vh;
+  width: 95%;
   word-wrap: break-word;
 }
 
@@ -71,4 +73,19 @@ textarea {
 #submit:hover {
   cursor: pointer;
   background-color: #e3170a;
+}
+
+.form__required {
+  padding-left: 10px;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.form__field {
+  display: flex;
+}
+
+.form__submitConfirmation {
+  font-size: 1.2rem;
+  text-align: center;
 }
