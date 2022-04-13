@@ -58,12 +58,21 @@ export default [
     image: 'css_backronyms_1.png',
     title: 'CSS Backronyms',
     subtitle:
-      "These images and animations explore unconventional words that 'CSS' could stand for.",
+      "These images and animations explore unconventional phrases that 'CSS' could stand for.",
     technologies: ['HTML', 'CSS'],
-    description: ``,
+    description: `Whether it's a Cornea's Suspicious Stare, a Captivating Seal Spokesman, or a Contemporary Spider Sculpture, these backronyms are a ton of fun. A 'backronym' is taking an existing acronym (like CSS) and attributing incorrect words to each letter (like 'Cheese Shrinking Showdown').
+    
+    I made this project to work on my CSS skills, including:
+    - Positioning items
+    - Clear element labelling using BEM (Block-Element-Modifier) layout, and
+    - Working with SASS, a CSS preprocessor.`,
     video: '',
-    gallery: ['css_backronyms_1.png'],
-    githubLink: '',
+    gallery: [
+      'css_backronyms_1.png',
+      'css_backronyms_2.png',
+      'css_backronyms_3.png',
+    ],
+    githubLink: 'https://github.com/rachel-meadows/css-backronyms',
     siteLink: '',
   },
   {

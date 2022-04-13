@@ -231,7 +231,7 @@ function Home(props) {
                 {
                   props.data.filter(project => selectedProjectsNames.includes(project.name)).map( project => {
                     return (
-                      <Link key={project.name} to={`/projects/${project.name}`} class="home__project__link">
+                      <Link key={project.name} to={`/projects/${project.name}`} className="home__project__link">
                         <ProjectCard key={project.name} data={project} className='home__projects__project'/>
                       </Link>
                     )
