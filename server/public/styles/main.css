@@ -53,6 +53,7 @@ button:hover {
 .nav__menu a {
   color: white;
   font-weight: normal;
+  letter-spacing: 0.6px;
 }
 
 h1 {

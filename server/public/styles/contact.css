@@ -68,6 +68,7 @@ textarea {
   font-size: 1.2rem;
   font-weight: 600;
   align-self: end;
+  margin-right: 5%;
 }
 
 #submit:hover {

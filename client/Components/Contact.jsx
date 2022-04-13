@@ -84,7 +84,7 @@ return (
               required
               /><span className='form__required'>*</span>
           </div>
-          <button type='submit' id="submit" className="short">Submit</button>
+          <button type='submit' id="submit">Submit</button>
           <div className='form__submitConfirmation'><em>{confirmMessage}</em></div>
         </form>
 
