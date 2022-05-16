@@ -91,3 +91,10 @@ textarea {
   font-size: 1.2rem;
   text-align: center;
 }
+
+/* 600px */
+@media (max-width: 600px) {
+  .contact {
+    padding: 8vh 10vw;
+  }
+}

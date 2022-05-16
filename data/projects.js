@@ -57,7 +57,7 @@ export default [
     siteLink: '',
   },
   {
-    name: 'pixelPicasso',
+    name: 'pixel-picasso',
     active: true,
     image: 'etch_a_sketch_1.png',
     title: 'Pixel Picasso',
