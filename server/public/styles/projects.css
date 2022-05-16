@@ -138,7 +138,7 @@ h1 {
 
 /* 800px and below*/
 @media (max-width: 800px) {
-  .projects__grid {
+  .projects__grid, .home__projects__grid {
     grid-template-columns: 1fr;
   }
 }

@@ -16,6 +16,7 @@ a {
   flex-direction: column;
   align-items: center;
   min-height: 85vh;
+  background-color: hsla(30, 29%, 95%, 0.5);
 }
 
 h1,
@@ -23,12 +24,6 @@ h2 {
   text-align: center;
   font-family: 'Open Sans';
 }
-
-/* li {
-  line-height: 1.1;
-  padding-bottom: 7px;
-  margin-left: 10vh;
-} */
 
 .noIndent {
   margin-left: 0px;
@@ -38,9 +33,8 @@ p {
   padding-bottom: 0px;
 }
 
-p,
-li {
-  font-size: 1em;
+p, .listWithBullets {
+  font-size: 1.1rem;
   line-height: 1.2;
 }
 
@@ -61,18 +55,22 @@ h4 {
 
 h5 {
   font-size: 1rem;
-  margin-left: 7.5vh;
-  margin-top: 7px;
+  margin-left: 6vh;
+  margin-top: 15px;
   margin-bottom: 7px;
 }
-
-/* ul {
-  margin-bottom: 15px;
-} */
 
 .spaceBelow {
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.work__details {
+  margin-left: 8.5vh;
+}
+
+.bodyContainer > ul, .bodyContainer > div > ul, .bodyContainer > div > p {
+  font-size: 1.1rem;
 }
 
 /* 1000px */
@@ -82,9 +80,6 @@ h5 {
   }
   h2 {
     font-size: 1.7em;
-  }
-  .bodyContainer {
-    padding: 8vh 15vw;
   }
 }
 

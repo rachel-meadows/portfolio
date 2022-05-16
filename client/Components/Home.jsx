@@ -251,9 +251,10 @@ function Home(props) {
                 After spending 3 years working at SaaS eLearning startup, I fell in love with
                 software and retrained as a full-stack web developer at Enspiral Dev Academy.
               </p>
-              <br/>
+              <p className="home__about_text">
+                I&apos;m currently looking for a full-stack or back-end role. While I live in Auckland, I would be willing to relocate to anywhere in New Zealand for the right job.</p>
               <p className="home__about__text">
-                In my free time, I enjoy reading about computational linguistics, playing D&#38;D, weightlifting, and hiking. I&apos;m also a volunteer trainer at Mania Sportsfighting Gym.
+                Outside of work, I like learning about text processing and generation, playing Dungeons &#38; Dragons, weightlifting, and hiking. I&apos;m also a volunteer sportsfighting coach.
               </p>
             </div>
 

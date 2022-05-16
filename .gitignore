@@ -5,4 +5,4 @@ static
 npm-debug.log
 bundle.*
 particles.json
-.vscode
+/.vscode

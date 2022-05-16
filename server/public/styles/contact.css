@@ -14,6 +14,7 @@
   align-items: center;
   padding: 10vh 20vw;
   font-family: 'Open Sans';
+  background-color: hsla(30, 29%, 95%, 0.5);
 }
 
 .contact__buttons {

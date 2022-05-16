@@ -9,7 +9,7 @@
 .slideshowSlider {
   white-space: nowrap;
   transition: ease 700ms;
-  height: 92%;
+  height: 85%;
 }
 
 .slide {
@@ -43,7 +43,6 @@
   border: 1px solid rgb(21, 125, 107);
 }
 
-
 .prev,
 .next {
   cursor: pointer;
@@ -59,7 +58,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   z-index: 1;
-  text-shadow: 1px 1px black;
+  text-shadow: 0px 0px 2px black;
 }
 
 .prev {
