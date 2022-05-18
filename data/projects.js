@@ -102,7 +102,7 @@ export default [
     technologies: ['JavaScript', 'HTML', 'CSS', 'REST API', 'React'],
     description: `Generate pixels monsters and build a team with Monster Keeper!
 
-    This project started life as a one-day hackathon, where I worked with four other students to plan and build a working MVP in less than 24 hours.
+    This project started life as a one-day hackathon with four other students.
 
     I was the back-end lead for the project. I found it especially interesting figuring out how to call from an API without CORS support, and then how to handle the image data I received from the API (which comes in the form of a byte array, so needed to be converted to a base64 string).`,
     video: '',
@@ -112,7 +112,7 @@ export default [
       'monster-keeper-3.png',
     ],
     githubLink: 'https://github.com/rachel-meadows/monster-keeper',
-    siteLink: '',
+    siteLink: 'https://monster-keeper.herokuapp.com/',
   },
   {
     active: true,
