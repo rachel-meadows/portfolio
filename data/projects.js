@@ -47,37 +47,51 @@ export default [
     title: 'Malaphor generator',
     subtitle: 'A mixed metaphor generator to create unusual new idioms.',
     technologies: ['Python', 'Flask', 'Web scraping', 'HTML', 'CSS', 'SQL'],
-    description: `More in-depth description of the thing. More in-depth description of the thing. More in-depth description of the thing.
-    More in-depth description of the thing.
+    description: `A malaphor is an error in which two figures of speech are merged, producing an often nonsensical result.
+
+    For example, we can take these idioms:
+      - "It's not brain science"
+      - "It's not rocket surgery"
     
-    More in-depth description of the thing.`,
+    ...and recombine them to create the malaphor, "It's not rocket surgery."
+    
+    This Python program generates malaphors scraped from Wikipedia's list of English idioms.`,
     video: '',
-    gallery: ['malaphor.png', 'malaphor.png', 'etch_a_sketch_1.png'],
+    gallery: ['malaphor.png', 'malaphor_2.png', 'malaphor_3.png'],
     githubLink: 'https://github.com/rachel-meadows/malaphor',
     siteLink: '',
   },
   {
     name: 'pixel-picasso',
     active: true,
-    image: 'etch_a_sketch_1.png',
+    image: 'pixel-picasso-1.png',
     title: 'Pixel Picasso',
-    subtitle: 'Create and save pixel artworks with a musical accompaniment.',
-    technologies: ['React', 'JavaScript', 'Express', 'Node', 'HTML', 'CSS'],
-    description: `TODO: Take the functionality of Etch a Sketch and put it in Pixel Picasso (i.e. with controls, but saveable  and editable)
+    subtitle:
+      'Create pixel artworks with a variety of tools, then add them to a public gallery.',
+    technologies: [
+      'React',
+      'JavaScript',
+      'Express',
+      'SQL',
+      'Node',
+      'HTML',
+      'CSS',
+    ],
+    description: `Anybody can be an artist using this fun tool. 
     
-    This site lets users 'paint' a picture in the style of an old-fashioned Etch-A-Sketch.
-    
-    Users can choose the colour of their brush, change the size of the grid, and switch between painting with an incremental fade or a plain colour.
-    
-    Users can also click the canvas to stop painting while they move the cursor to a new position, then click again to resume painting.`,
+    Pixel Picasso lets users 'paint' a pixelated picture in the style of an Etch-A-Sketch, then share it in a collaborative gallery.
+
+    This project began as a one-day hackathon, where I worked with four other students to plan and build a working MVP in less than 24 hours. I was the frontend lead, and was responsible for the visual designs and much of the frontend logic in the React components.
+
+    Since then, I have extended the project beyond MVP by adding several new features. Users can now clear the grid, change the size of the grid, and switch between painting with an cumulative or solid stroke.`,
     video: '',
     gallery: [
-      'etch_a_sketch_1.png',
-      'etch_a_sketch_2.png',
-      'etch_a_sketch_3.png',
+      'pixel-picasso-1.png',
+      'pixel-picasso-2.png',
+      'pixel-picasso-3.png',
     ],
-    githubLink: '',
-    siteLink: '',
+    githubLink: 'https://github.com/rachel-meadows/pixel-picasso',
+    siteLink: 'https://pixel-picasso.herokuapp.com/',
   },
   {
     active: true,
@@ -121,7 +135,7 @@ export default [
     image: 'would_you_rather_1.png',
     title: 'Would you rather?',
     subtitle:
-      "This redesign of a project built in a one-day hackathon lets users see who agrees with them on 'would you rather' questions.",
+      "This project lets users see who agrees with them on 'would you rather' questions.",
     technologies: [
       'JavaScript',
       'HTML',

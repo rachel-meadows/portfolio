@@ -8,7 +8,8 @@
 }
 
 .singleProject__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  max-width: 60vw;
 }
 
 .singleProject__buttons {
@@ -42,10 +43,11 @@
   color: white;
   height: fit-content;
   font-size: 1.2rem;
+  user-select: none;
 }
 
 .singleProject__description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   white-space: pre-line;
   flex: 1;
   display: flex;
