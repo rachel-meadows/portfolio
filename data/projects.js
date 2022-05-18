@@ -96,14 +96,22 @@ export default [
   {
     active: true,
     name: 'monsters',
-    image: '',
-    title: 'The wonderful world of monsters',
+    image: 'monster-keeper-3.png',
+    title: 'Monster Keeper',
     subtitle: 'We call from an API to build teams of pixel monsters.',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'REST API'],
-    description: `https://github.com/kahikatea-2022/GODZILLA`,
+    technologies: ['JavaScript', 'HTML', 'CSS', 'REST API', 'React'],
+    description: `Generate pixels monsters and build a team with Monster Keeper!
+
+    This project started life as a one-day hackathon, where I worked with four other students to plan and build a working MVP in less than 24 hours.
+
+    I was the back-end lead for the project. I found it especially interesting figuring out how to call from an API without CORS support, and then how to handle the image data I received from the API (which comes in the form of a byte array, so needed to be converted to a base64 string).`,
     video: '',
-    gallery: [],
-    githubLink: '',
+    gallery: [
+      'monster-keeper-1.png',
+      'monster-keeper-2.png',
+      'monster-keeper-3.png',
+    ],
+    githubLink: 'https://github.com/rachel-meadows/monster-keeper',
     siteLink: '',
   },
   {
