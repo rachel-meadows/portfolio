@@ -67,8 +67,8 @@
 .singleProject__image {
   width: 30vw;
   height: 30vw;
-  background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 

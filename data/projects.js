@@ -17,14 +17,15 @@ export default [
       'Express',
       'Node',
     ],
-    description: `More in-depth description of the thing. More in-depth description of the thing. More in-depth description of the thing.
-    More in-depth description of the thing.
+    description: `SERV. was my final project in Enspiral Dev Academy. I worked with a team of four to take this webapp from idea to reality within 6 days.
     
-    More in-depth description of the thing.`,
+    My role within this app was the backend lead. I was responsible for the database functions, routes, API functions and some of the business logic. During the project, I learned how to communicate and work as a team under intense time pressure. 
+
+    In the finished MVP, customers post jobs, then service businesses send quotes to bid on these jobs. Customers can check the business details and accept or reject a quote. When the job is done, the business marks it as completed, and the customer can review their work and pay for the job using Stripe.`,
     video: '',
-    gallery: ['serv_1.png', 'serv_2.png', 'serv_3.png'],
-    githubLink: '',
-    siteLink: '',
+    gallery: ['serv-1.png', 'serv-2.png', 'serv-3.png'],
+    githubLink: 'https://github.com/rachel-meadows/serv',
+    siteLink: 'https://github.com/rachel-meadows/serv',
   },
   {
     active: false,

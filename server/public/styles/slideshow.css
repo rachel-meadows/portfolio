@@ -17,11 +17,13 @@
   min-width: 300px;
   height: 100%;
   width: 100%;
-  border-radius: 40px;
+  border-radius: 20px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: inline-block;
 }
+
 
 .slideshowDots {
   text-align: center;
