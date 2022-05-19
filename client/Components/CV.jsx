@@ -13,41 +13,79 @@ function CV() {
           <h2>Junior Full-Stack Developer</h2>
         </em>
         <h2>Summary</h2>
-        <ul>
-          <li className="listWithBullets noIndent">
-            I will graduate Enspiral Dev Academy in May 2022. In this course, I
-            learned modern front-end and back-end web development, with
-            particular focus on JavaScript (ES6), relational databases, and REST
-            APIs.
-          </li>
-          <li className="listWithBullets noIndent">
-            My personal projects include web applications written in Python,
-            vanilla JavaScript, and React. Several use SQL databases, and all
-            use distributed version control (Git).
-          </li>
-          <li className="listWithBullets noIndent">
-            With 3 years experience in a fast-paced SaaS startup, I also have
-            skills in a wide range of business analysis, data analysis, and
-            product development activities.
-          </li>
-        </ul>
+        <p>
+          Kia ora! I&apos;m a full-stack software developer and recent graduate
+          of Enspiral Dev Academy. Before transitioning into software, I spent 3
+          years in a fast-paced SaaS startup, where my responsibilities spanned
+          management, business analysis, and product development.
+        </p>
+        <br />
+        <p>
+          Outside of work, I like building projects that relate to text
+          processing and generation (mostly in Python). I&apos;m also a
+          volunteer sportsfighting coach and enjoy collaborative tabletop games.
+        </p>
         <br />
 
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>JavaScript (ES6), React, Redux</li>
-          <li>SQL (SQLite, PostgreSQL)</li>
-          <li>HTML5, CSS3</li>
-          <li>Python 3</li>
-          <li>API development, REST APIs</li>
-          <li>
-            Agile methodologies, test-driven development, automated testing,
-            distributed version control
-          </li>
-        </ul>
+        <h2>Experience </h2>
+
+        <div>
+          <strong>
+            <h3>Apprentice Software Developer</h3>
+            <p>Enspiral Dev Academy</p>
+          </strong>
+          <p className="work__dates spaceBelow">January 2022 – May 2022</p>
+          <ul>
+            <li className="work__details listWithBullets">
+              Enspiral Dev Academy is an intensive, 15-week full-stack bootcamp
+              that emulates a best-practice commercial environment.
+            </li>
+            <li className="work__details listWithBullets">
+              Technologies and skills I learned in this course include:
+            </li>
+            <li className="work__details__indented listWithBullets">
+              JavaScript (ES6).
+            </li>
+            <li className="work__details__indented listWithBullets">
+              React and Redux.
+            </li>
+            <li className="work__details__indented listWithBullets">
+              Server-side development (Node.js, Express.js) and templating
+              (Handlebars.js).
+            </li>
+            <li className="work__details__indented listWithBullets">
+              SQL database design and development (using SQLite3 and Knex.js).
+            </li>
+            <li className="work__details__indented listWithBullets">
+              HTML5 &#38; CSS3
+            </li>
+            <li className="work__details__indented listWithBullets">
+              REST and API architectures (invoking API routes with Insomnia,
+              consuming APIs with Superagent, testing API calls with Supertest).
+            </li>
+            <li className="work__details__indented listWithBullets">
+              Test-driven development (Jest and React Testing Library),
+              distributed version control (Git and GitHub), pair programming,
+              and Agile methodologies.
+            </li>
+            <li className="work__details__indented listWithBullets">
+              Teamwork, giving and receiving feedback, and communication
+              techniques.
+            </li>
+            <li className="work__details listWithBullets">
+              Our final project, SERV., allows customers to post jobs to a board
+              that service businesses can make quotes on. Myself and 4 other
+              students built this in 6 days, using React, Redux, Bootstrap,
+              Auth0, and SQLite / Knex.js. As our team&apos;s backend lead, I
+              was responsible for the API, routes, database functions, and some
+              of the business logic. You can view the site live at
+              <a href="#"> https://www.heroku.com/serv</a>.
+            </li>
+          </ul>
+        </div>
+
         <br />
 
-        <h2>Work Experience </h2>
         <div>
           <h3>Operations Manager</h3>
           <strong>
@@ -80,15 +118,16 @@ function CV() {
           <h5>Product Management and Customer Experience</h5>
           <ul>
             <li className="work__details listWithBullets">
-              Named inventor on{' '}
+              My team and I invented a digital multimedia learning system, which
               <a
                 href="https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10915821.PN.&OS=PN/10915821&RS=PN/10915821"
                 target="_blank"
                 rel="noreferrer"
               >
-                United States Patent #10,915,821
-              </a>{' '}
-              for a digital multimedia learning system.
+                {' '}
+                went on to be patented
+              </a>
+              .
             </li>
             <li className="work__details listWithBullets">
               Production and facilitation of educational courses for corporate,
@@ -98,7 +137,7 @@ function CV() {
             <li className="work__details listWithBullets">
               Primary lead of customer experience; conducted surveys and user
               interviews, then prioritised software requests for the technical
-              team (600+ tickets logged in JIRA).
+              team (800+ tickets logged in Jira).
             </li>
             <li className="work__details listWithBullets">
               Primary liaison with UX (User Experience) and media / PR
@@ -181,22 +220,7 @@ function CV() {
             <p className="work__dates spaceBelow">2022</p>
             <ul>
               <li className="work__details listWithBullets">
-                JavaScript (ES6), React, Redux, server-side development
-                (Node.js, Express.js), server-side templating (Handlebars.js),
-                Webpack, HTML5, CSS3.
-              </li>
-              <li className="work__details listWithBullets">
-                SQL database design and development (using SQLite3 and Knex.js).
-              </li>
-              <li className="work__details listWithBullets">
-                REST and API architectures; e.g. invoking API routes with
-                Insomnia, task runners and bundlers, consuming APIs with
-                Superagent, testing API calls with Supertest.
-              </li>
-              <li className="work__details listWithBullets">
-                Development best practices, including test-driven development,
-                distributed version control, pair programming, coding patterns,
-                Agile methodologies, etc.
+                See Experience section.
               </li>
             </ul>
             <br />
@@ -250,7 +274,9 @@ function CV() {
 
             <div>
               <h2>Referees</h2>
-              <p>Workplace and academic referees available upon request.</p>
+              <p style={{ textAlign: 'center' }}>
+                <em>Workplace and academic referees available upon request.</em>
+              </p>
             </div>
 
             <br />
@@ -258,7 +284,7 @@ function CV() {
         </div>
 
         <a
-          href="images/Junior Software Developer CV.pdf"
+          href="images/Rachel Meadows Software Developer CV.pdf"
           download="Rachel Meadows CV.pdf"
         >
           <button>Download CV</button>

@@ -69,6 +69,11 @@ h5 {
   margin-left: 8.5vh;
 }
 
+.work__details__indented {
+  margin-left: 14vh;
+  list-style-type: circle;
+}
+
 .bodyContainer > ul, .bodyContainer > div > ul, .bodyContainer > div > p {
   font-size: 1.1rem;
 }
