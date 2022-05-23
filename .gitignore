@@ -6,3 +6,6 @@ npm-debug.log
 bundle.*
 particles.json
 /.vscode
+/.firebase
+/.github
+server/public/images/projects/original-horrifying.gif

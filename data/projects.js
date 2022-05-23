@@ -17,15 +17,15 @@ export default [
       'Express',
       'Node',
     ],
-    description: `SERV. was my final project in Enspiral Dev Academy. I worked with a team of four to take this webapp from idea to reality within 6 days.
+    description: `SERV. was my final project in Enspiral Dev Academy. I worked with a team of four to take this webapp from idea to reality in just 6 days.
     
-    My role within this app was the backend lead. I was responsible for the database functions, routes, API functions and some of the business logic. During the project, I learned how to communicate and work as a team under intense time pressure. 
+    As the backend lead, I was responsible for the database functions, routes, API functions and some of the business logic. The project also required me to communicate with my teammates and manage the challenges of working under intense time pressure. 
 
     In the finished MVP, customers post jobs, then service businesses send quotes to bid on these jobs. Customers can check the business details and accept or reject a quote. When the job is done, the business marks it as completed, and the customer can review their work and pay for the job using Stripe.`,
     video: '',
     gallery: ['serv-1.png', 'serv-2.png', 'serv-3.png'],
     githubLink: 'https://github.com/rachel-meadows/serv',
-    siteLink: 'https://github.com/rachel-meadows/serv',
+    siteLink: 'https://serv-site.herokuapp.com/',
   },
   {
     active: false,
@@ -48,19 +48,17 @@ export default [
     title: 'Malaphor generator',
     subtitle: 'A mixed metaphor generator to create unusual new idioms.',
     technologies: ['Python', 'Flask', 'Web scraping', 'HTML', 'CSS', 'SQL'],
-    description: `A malaphor is an error in which two figures of speech are merged, producing an often nonsensical result.
-
-    For example, we can take these idioms:
-      - "It's not brain science"
-      - "It's not rocket surgery"
+    description: `A 'malaphor' is when two figures of speech are merged, usually producing a nonsensical result. For example, we can combine the phrases, "It's not brain science" and "It's not rocket surgery" to create the malaphor, "It's not rocket surgery."
     
-    ...and recombine them to create the malaphor, "It's not rocket surgery."
+    For this project, I build a web scraper to retrieve Wikipedia's list of English idioms and proverbs (over 10,000 records!) and insert them into a SQLite database. The program finds pairs of phrases that can be combined 'cleanly', and evaluates them on various metrics to see if they are likely to make a good malaphor.
     
-    This Python program generates malaphors scraped from Wikipedia's list of English idioms.`,
+    The program was originally intended to be a command-line tool, and that version has extra features such as an optional profanity filter, and the ability to choose one of the starting idioms. The current version hosted on Heroku uses the profanity filter by default and is a bit slower to load each idiom.
+    
+    I haven't had time to refactor this project as much as I would like, but in the future I plan to a) use better algorithms to increase speed, b) support user settings on the front-end, and c) use the "example" data to create more semantically-appropriate malaphors.`,
     video: '',
     gallery: ['malaphor.png', 'malaphor_2.png', 'malaphor_3.png'],
     githubLink: 'https://github.com/rachel-meadows/malaphor',
-    siteLink: '',
+    siteLink: 'https://malaphor-generator.herokuapp.com',
   },
   {
     name: 'pixel-picasso',
@@ -84,7 +82,7 @@ export default [
 
     This project began as a one-day hackathon, where I worked with four other students to plan and build a working MVP in less than 24 hours. I was the frontend lead, and was responsible for the visual designs and much of the frontend logic in the React components.
 
-    Since then, I have extended the project beyond MVP by adding several new features. Users can now clear the grid, change the size of the grid, and switch between painting with an cumulative or solid stroke.`,
+    Since then, I have extended the project beyond MVP by adding several new features. Users can now clear the grid, change the size of the grid, and switch between painting with a cumulative or solid stroke.`,
     video: '',
     gallery: [
       'pixel-picasso-1.png',
@@ -117,26 +115,28 @@ export default [
   },
   {
     active: true,
-    name: 'css-backronyms',
+    name: 'css-incorrect-acronyms',
     image: 'css_backronyms_1.png',
-    title: 'CSS Backronyms',
+    title: 'CSS Incorrect Acronyms',
     subtitle:
       "These images and animations explore unconventional phrases that 'CSS' could stand for.",
     technologies: ['HTML', 'CSS'],
-    description: `A 'backronym' is taking an existing acronym (like CSS) and attributing incorrect words to each letter (like 'Cheese Shrinking Showdown'). Whether it's a Cornea's Suspicious Stare, a Captivating Seal Spokesman, or a Contemporary Spider Sculpture, these CSS images are a ton of fun.
+    description: `Whether it's a Cornea's Suspicious Stare, a Contemporary Spider Sculpture, or a Captivating Seal Spokesman, these CSS-only images are a ton of fun.
     
-    I made this project to work on my CSS skills, including:
-    - Positioning items
-    - Clear element labelling using BEM (Block-Element-Modifier) layout, and
-    - Working with SASS, a CSS preprocessor.`,
+    I made this project to work on my CSS skills, such as positioning items and clear element labelling. By deliberately introducing complexity, this project has helped me identify potential issues and best practices to learn.
+    
+    For example, I initially worked on the images in isolation before adding them to one file, resulting in a seal with a spider's 'eyes' class. The horrifying little critter it created was my prompt to start using BEM (Block-Element-Modifier) layout.
+
+    I plan to keep adding to this project so I can challenge myself to maintain code readability on more complex projects, and to work with technologies such as HTML Canvas and SASS.`,
     video: '',
     gallery: [
       'css_backronyms_1.png',
-      'css_backronyms_2.png',
+      // 'css_backronyms_2.png',
       'css_backronyms_3.png',
+      'horrifying.gif',
     ],
-    githubLink: 'https://github.com/rachel-meadows/css-backronyms',
-    siteLink: '',
+    githubLink: 'https://github.com/rachel-meadows/css-fake-acronyms/',
+    siteLink: 'https://rachel-meadows.github.io/css-fake-acronyms/',
   },
   {
     active: true,
@@ -154,7 +154,11 @@ export default [
       'node',
       'Handlebars',
     ],
-    description: ``,
+    description: `Would you rather have a lightsaber or a flaming sword? You know your answer to that... but how many people agree with you?
+    
+    This site gives you the percentage of people who agree with you on 'would you rather' questions - and also shows you their names, so you can share it with your friends and see who thinks the same way.
+    
+    As one of my earlier project, I have yet to add authentication and authorisation to this site, but it's a fun proof-of-concept for a conversation starter game.`,
     video: '',
     gallery: [
       'would_you_rather_1.png',
