@@ -54,11 +54,15 @@ export default [
     
     The program was originally intended to be a command-line tool, and that version has extra features such as an optional profanity filter, and the ability to choose one of the starting idioms. The current version hosted on Heroku uses the profanity filter by default and is a bit slower to load each idiom.
     
-    I haven't had time to refactor this project as much as I would like, but in the future I plan to a) use better algorithms to increase speed, b) support user settings on the front-end, and c) use the "example" data to create more semantically-appropriate malaphors.`,
+    In the future, I plan to a) use better algorithms to increase speed, b) support user settings on the front-end, and c) use the "example" data to create more semantically-appropriate malaphors.
+    
+    [Note: This site hasn't been deployed yet, as I would need to convert a SQLite database to PostgreSQL at a larger scale than I have for other projects. Feel free to get in touch if you'd like a demonstration.]`,
     video: '',
     gallery: ['malaphor.png', 'malaphor_2.png', 'malaphor_3.png'],
     githubLink: 'https://github.com/rachel-meadows/malaphor',
-    siteLink: 'https://malaphor-generator.herokuapp.com',
+    // Heroku link when I've converted db to Postgres:
+    // siteLink: 'https://malaphor-generator.herokuapp.com',
+    siteLink: '',
   },
   {
     name: 'pixel-picasso',
