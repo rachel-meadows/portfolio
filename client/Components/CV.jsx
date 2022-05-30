@@ -78,8 +78,16 @@ function CV() {
               students built this in 6 days, using React, Redux, Bootstrap,
               Auth0, and SQLite / Knex.js. As our team&apos;s backend lead, I
               was responsible for the API, routes, database functions, and some
-              of the business logic. You can view the site live at
-              <a href="#"> https://www.heroku.com/serv</a>.
+              of the business logic.To see the different views of the site for
+              customer and business users, you can view a video demo{' '}
+              <a
+                href="https://www.youtube.com/watch?v=NvA5cs7Y_vU&list=PL_AE4CqTqcwLHfFLQYKoeaxdU4Q1rod6T&t=906s"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </a>
+              .
             </li>
           </ul>
         </div>

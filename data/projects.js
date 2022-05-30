@@ -22,7 +22,7 @@ export default [
     As the backend lead, I was responsible for the database functions, routes, API functions and some of the business logic. The project also required me to communicate with my teammates and manage the challenges of working under intense time pressure. 
 
     In the finished MVP, customers post jobs, then service businesses send quotes to bid on these jobs. Customers can check the business details and accept or reject a quote. When the job is done, the business marks it as completed, and the customer can review their work and pay for the job using Stripe.`,
-    video: '',
+    video: '/images/projects/serv.mp4',
     gallery: ['serv-1.png', 'serv-2.png', 'serv-3.png'],
     githubLink: 'https://github.com/rachel-meadows/serv',
     siteLink: 'https://serv-site.herokuapp.com/',
