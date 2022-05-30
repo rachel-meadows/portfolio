@@ -373,7 +373,7 @@ function Home(props) {
 
           <div>
             <video controls>
-              <source src="#" type="video/mp4" />
+              <source src="/images/video.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
