@@ -12,7 +12,7 @@ export default [
       'JavaScript',
       'SQL',
       'REST API',
-      'HTML',
+      'HTML / CSS',
       'CSS',
       'Express',
       'Node',
@@ -34,7 +34,7 @@ export default [
     title: 'Fridge with friends',
     subtitle:
       'Finally, a virtual space to creatively place fridge magnets with your friends!',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'React'],
+    technologies: ['JavaScript', 'HTML / CSS', 'React'],
     description: ``,
     video: '',
     gallery: ['.png'],
@@ -47,7 +47,7 @@ export default [
     image: 'malaphor.png',
     title: 'Malaphor generator',
     subtitle: 'A mixed metaphor generator to create unusual new idioms.',
-    technologies: ['Python', 'Flask', 'Web scraping', 'HTML', 'CSS', 'SQL'],
+    technologies: ['Python', 'Flask', 'Web scraping', 'HTML / CSS', 'SQL'],
     description: `A 'malaphor' is when two figures of speech are merged, usually producing a nonsensical result. For example, we can combine the phrases, "It's not brain science" and "It's not rocket surgery" to create the malaphor, "It's not rocket surgery."
     
     For this project, I build a web scraper to retrieve Wikipedia's list of (over 10,000) English idioms and proverbs and insert them into a SQLite database. The program finds pairs of phrases that can be combined 'cleanly', and evaluates them on various metrics to see if they are likely to make a good malaphor.
@@ -71,7 +71,7 @@ export default [
     title: 'Synonym Roll',
     subtitle:
       'Users enter snippets of text, which are replaced with synonyms to make the text as alliterative as possible.',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'express', 'node'],
+    technologies: ['JavaScript', 'HTML / CSS', 'React', 'express', 'node'],
     description: `Is your writing readable, but bland? Are you one literary device short of finishing your short story? Would you like your speeches to be more entertaining... and much, much more incoherent? If you answered 'yes' to any of those questions, Synonym Roll is for you!
     
     Synonym Roll lets users input a short snippet of text, then makes calls to the Merriam-Webster's Collegiate® Thesaurus API to find all the synonyms for each word in that snippet. A few hashmaps later, it spits out alliterative text with a similar sentiment — though sometimes with hilarious misinterpretations.
@@ -97,7 +97,7 @@ export default [
       'Express',
       'SQL',
       'Node',
-      'HTML',
+      'HTML / CSS',
       'CSS',
     ],
     description: `Anybody can be an artist using this fun tool. 
@@ -122,7 +122,7 @@ export default [
     image: 'monster-keeper-3.png',
     title: 'Monster Keeper',
     subtitle: 'We call from an API to build teams of pixel monsters.',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'REST API', 'React'],
+    technologies: ['JavaScript', 'HTML / CSS', 'REST API', 'React'],
     description: `Generate pixels monsters and build a team with Monster Keeper!
 
     This project started life as a one-day hackathon with four other students.
@@ -144,7 +144,7 @@ export default [
     title: 'CSS Incorrect Acronyms',
     subtitle:
       "These images and animations explore unconventional phrases that 'CSS' could stand for.",
-    technologies: ['HTML', 'CSS'],
+    technologies: ['HTML / CSS', 'CSS'],
     description: `Whether it's a Cornea's Suspicious Stare, a Contemporary Spider Sculpture, or a Captivating Seal Spokesman, these CSS-only images are a ton of fun.
     
     I made this project to work on my CSS skills, such as positioning items and clear element labelling. By deliberately introducing complexity, this project has helped me identify potential issues and best practices to learn.
@@ -171,7 +171,7 @@ export default [
       "This project lets users see who agrees with them on 'would you rather' questions.",
     technologies: [
       'JavaScript',
-      'HTML',
+      'HTML / CSS',
       'CSS',
       'SQL',
       'express',
@@ -198,7 +198,7 @@ export default [
     image: 'weather_1.png',
     title: 'Weather app',
     subtitle: 'Check the weather anywhere in the world with this weather app.',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'REST API'],
+    technologies: ['JavaScript', 'HTML / CSS', 'REST API'],
     description: `One of my first projects, this weather app accesses a public API to find the weather anywhere in the world.
     
     By pulling from an API, the data are updated in real-time - so you can always know the forecast for the next few days!`,

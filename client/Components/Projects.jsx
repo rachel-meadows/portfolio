@@ -77,11 +77,12 @@ function Projects(props) {
           <div id="tags-flask" className="tags__tag" onClick={filterProjects}>
             Flask
           </div>
-          <div id="tags-html" className="tags__tag" onClick={filterProjects}>
-            HTML
-          </div>
-          <div id="tags-css" className="tags__tag" onClick={filterProjects}>
-            CSS
+          <div
+            id="tags-html-css"
+            className="tags__tag"
+            onClick={filterProjects}
+          >
+            HTML / CSS
           </div>
         </div>
 
