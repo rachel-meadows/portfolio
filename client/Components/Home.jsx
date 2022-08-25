@@ -11,7 +11,7 @@ function Home(props) {
     'serv',
     'malaphor',
     'pixel-picasso',
-    'would-you-rather',
+    'synonym-roll',
   ]
 
   // Index page scroll button
@@ -360,14 +360,16 @@ function Home(props) {
               at Enspiral Dev Academy.
             </p>
             <p className="home__about_text">
-              I&apos;m currently looking for a full-stack or back-end role.
-              While I live in Auckland, I would be willing to relocate to
-              anywhere in New Zealand for the right job.
-            </p>
-            <p className="home__about__text">
               Outside of work, I like learning about text processing and
               generation, playing Dungeons &#38; Dragons, weightlifting, and
               hiking. I&apos;m also a volunteer sportsfighting coach.
+            </p>
+            <p className="home__about_text">
+              <em>
+                <b>Update:</b> I am no longer looking for work (yes, I&apos;ll
+                update the video eventually!). Anyone keen to pair program or
+                collaborate is still welcome to get in touch.
+              </em>
             </p>
           </div>
 

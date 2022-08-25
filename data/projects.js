@@ -50,9 +50,9 @@ export default [
     technologies: ['Python', 'Flask', 'Web scraping', 'HTML', 'CSS', 'SQL'],
     description: `A 'malaphor' is when two figures of speech are merged, usually producing a nonsensical result. For example, we can combine the phrases, "It's not brain science" and "It's not rocket surgery" to create the malaphor, "It's not rocket surgery."
     
-    For this project, I build a web scraper to retrieve Wikipedia's list of English idioms and proverbs (over 10,000 records!) and insert them into a SQLite database. The program finds pairs of phrases that can be combined 'cleanly', and evaluates them on various metrics to see if they are likely to make a good malaphor.
+    For this project, I build a web scraper to retrieve Wikipedia's list of (over 10,000) English idioms and proverbs and insert them into a SQLite database. The program finds pairs of phrases that can be combined 'cleanly', and evaluates them on various metrics to see if they are likely to make a good malaphor.
     
-    The program was originally intended to be a command-line tool, and that version has extra features such as an optional profanity filter, and the ability to choose one of the starting idioms. The current version hosted on Heroku uses the profanity filter by default and is a bit slower to load each idiom.
+    The program was originally intended to be a command-line tool, and that version has extra features such as an optional profanity filter, and the ability to choose a starting idioms.
     
     In the future, I plan to a) use better algorithms to increase speed, b) support user settings on the front-end, and c) use the "example" data to create more semantically-appropriate malaphors.
     
@@ -63,6 +63,26 @@ export default [
     // Heroku link when I've converted db to Postgres:
     // siteLink: 'https://malaphor-generator.herokuapp.com',
     siteLink: '',
+  },
+  {
+    active: true,
+    name: 'synonym-roll',
+    image: 'synonym_roll.jpg',
+    title: 'Synonym Roll',
+    subtitle:
+      'Users enter snippets of text, which are replaced with synonyms to make the text as alliterative as possible.',
+    technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'express', 'node'],
+    description: `Is your writing readable, but bland? Are you one literary device short of finishing your short story? Would you like your speeches to be more entertaining... and much, much more incoherent? If you answered 'yes' to any of those questions, Synonym Roll is for you!
+    
+    Synonym Roll lets users input a short snippet of text, then makes calls to the Merriam-Webster's Collegiate® Thesaurus API to find all the synonyms for each word in that snippet. A few hashmaps later, it spits out alliterative text with a similar sentiment — though sometimes with hilarious misinterpretations.
+    
+    For example, here's the top paragraph rewritten by Synonym Roll (punctuation added):
+
+    "Is your line legible, but light? Live you one learned leaning low of lapsing your low lie? Leave you lean your lingos to be likewise entertaining... and much much likewise loose? If you answered 'yes' to any of those questions, Synonym Lumber is for you!"`,
+    video: '',
+    gallery: ['synonym_roll_1.png', 'synonym_roll_2.png', 'synonym_roll_3.png'],
+    githubLink: 'https://github.com/rachel-meadows/synonym-roll',
+    siteLink: 'http://synonym-roll.herokuapp.com/',
   },
   {
     name: 'pixel-picasso',
@@ -143,7 +163,7 @@ export default [
     siteLink: 'https://rachel-meadows.github.io/css-fake-acronyms/',
   },
   {
-    active: true,
+    active: false,
     name: 'would-you-rather',
     image: 'would_you_rather_1.png',
     title: 'Would you rather?',
