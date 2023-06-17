@@ -169,9 +169,9 @@ function Home(props) {
           </div>
           <div className="home__skills__skill">
             <img
-              src="/images/technicalSkills/dotnet.jpg"
+              src="/images/technicalSkills/dotnet.png"
               className="logo"
-              alt="Dot Net logo"
+              alt=".Net logo"
             />
             <div className="skill__caption">.NET</div>
           </div>
