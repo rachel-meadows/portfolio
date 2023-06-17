@@ -53,7 +53,7 @@ function Home(props) {
             </h3>
             <h3 className="home__header__text">
               I have commercial experience in C#, .NET and a background in
-              JavaScript. Before transitioning into tech, I spent three years in
+              Javascript. Before transitioning into tech, I spent three years in
               a product and operations management role.
             </h3>
             <h3 className="home__header__text">
@@ -155,9 +155,9 @@ function Home(props) {
             <img
               src="/images/technicalSkills/js.png"
               className="logo"
-              alt="JavaScript logo"
+              alt="Javascript logo"
             />
-            <div className="skill__caption">JavaScript</div>
+            <div className="skill__caption">Javascript</div>
           </div>
           <div className="home__skills__skill">
             <img

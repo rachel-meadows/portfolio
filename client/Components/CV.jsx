@@ -10,130 +10,92 @@ function CV() {
       <div className="bodyContainer">
         <h1>Rachel Meadows</h1>
         <em>
-          <h2>Junior Full-Stack Developer</h2>
+          <h2>Junior Software Engineer</h2>
         </em>
-        <h2>Summary</h2>
+        <h2>Introduction</h2>
         <p>
-          Kia ora! I&apos;m a full-stack software developer and recent graduate
-          of Enspiral Dev Academy. Before transitioning into software, I spent 3
-          years in a fast-paced SaaS startup, where my responsibilities spanned
-          management, business analysis, and product development.
+          Kia ora! I&apos;m a full-stack software developer with a focus on .NET
+          and Javascript development. Before transitioning into software, I
+          spent 3 years in a fast-paced SaaS startup, where my responsibilities
+          spanned management, business analysis, and product development.
         </p>
         <br />
         <p>
           Outside of work, I like building projects that relate to text
-          processing and generation (mostly in Python). I&apos;m also a
-          volunteer sportsfighting coach and enjoy collaborative tabletop games.
+          processing and generation. I&apos;m also a volunteer sportsfighting
+          coach and enjoy collaborative tabletop games.
         </p>
         <br />
 
         <h2>Experience </h2>
-
-        <div>
-          <strong>
-            <h3>Apprentice Software Developer</h3>
-            <p>Enspiral Dev Academy</p>
-          </strong>
-          <p className="work__dates spaceBelow">January 2022 – May 2022</p>
-          <ul>
-            <li className="work__details listWithBullets">
-              Enspiral Dev Academy is an intensive, 15-week full-stack bootcamp
-              that emulates a best-practice commercial environment.
-            </li>
-            <li className="work__details listWithBullets">
-              Technologies and skills I learned in this course include:
-            </li>
-            <li className="work__details__indented listWithBullets">
-              JavaScript (ES6).
-            </li>
-            <li className="work__details__indented listWithBullets">
-              React and Redux.
-            </li>
-            <li className="work__details__indented listWithBullets">
-              Server-side development (Node.js, Express.js) and templating
-              (Handlebars.js).
-            </li>
-            <li className="work__details__indented listWithBullets">
-              SQL database design and development (using SQLite3 and Knex.js).
-            </li>
-            <li className="work__details__indented listWithBullets">
-              HTML5 &#38; CSS3
-            </li>
-            <li className="work__details__indented listWithBullets">
-              REST and API architectures (invoking API routes with Insomnia,
-              consuming APIs with Superagent, testing API calls with Supertest).
-            </li>
-            <li className="work__details__indented listWithBullets">
-              Test-driven development (Jest and React Testing Library),
-              distributed version control (Git and GitHub), pair programming,
-              and Agile methodologies.
-            </li>
-            <li className="work__details__indented listWithBullets">
-              Teamwork, giving and receiving feedback, and communication
-              techniques.
-            </li>
-            <li className="work__details listWithBullets">
-              Our final project, SERV., allows customers to post jobs to a board
-              that service businesses can make quotes on. Myself and 4 other
-              students built this in 6 days, using React, Redux, Bootstrap,
-              Auth0, and SQLite / Knex.js. As our team&apos;s backend lead, I
-              was responsible for the API, routes, database functions, and some
-              of the business logic.To see the different views of the site for
-              customer and business users, you can view a video demo{' '}
-              <a
-                href="https://www.youtube.com/watch?v=NvA5cs7Y_vU&list=PL_AE4CqTqcwLHfFLQYKoeaxdU4Q1rod6T&t=906s"
-                target="_blank"
-                rel="noreferrer"
-              >
-                here
-              </a>
-              .
-            </li>
-          </ul>
-        </div>
-
         <br />
-
         <div>
+          <div>
+            <h3>Associate Engineer</h3>
+            <strong>
+              <p>Xero</p>
+            </strong>
+            <p className="work__dates spaceBelow">June 2022 – Present</p>
+
+            <h5>Key Responsibilities</h5>
+            <ul>
+              <li className="work__details listWithBullets">
+                Independently completed tickets and tasks efficiently and
+                accurately.
+              </li>
+              <li className="work__details listWithBullets">
+                Collaborated with team members to identify and troubleshoot
+                software issues.
+              </li>
+              <li className=" work__details listWithBullets">
+                Participated in code reviews and contribute to documentation, to
+                ensure code quality and adherence to project requirements.
+              </li>
+            </ul>
+            <h5>Professional Development</h5>
+            <ul>
+              <li className="work__details listWithBullets">
+                Engaged in self-study through online courses and technical
+                publications to keep up with emerging technologies and best
+                practices.
+              </li>
+              <li className="work__details listWithBullets">
+                Participated in hackathons, both within and outside of work, to
+                sharpen problem-solving skills and collaborate in
+                time-constrained environments.
+              </li>
+            </ul>
+          </div>
+          <br />
           <h3>Operations Manager</h3>
           <strong>
-            <p>
-              Cognitive Performance Labs (
-              <a href="http://akomaps.com" target="_blank" rel="noreferrer">
-                www.akomaps.com
-              </a>
-              )
-            </p>
+            <p>Cognitive Performance Labs</p>
           </strong>
           <p className="work__dates spaceBelow">
             November 2018 – November 2021
           </p>
 
-          <h5>Research, Data, Strategy and Business Intelligence</h5>
+          <h5>Research, Data, and Business Intelligence</h5>
           <ul>
             <li className="work__details listWithBullets">
-              Research and reporting of business intelligence information
-              (market and competitor analyses, pricing analysis, etc.).
+              Conducted market and competitor analyses, pricing analyses, and
+              reported business intelligence information.
             </li>
             <li className="work__details listWithBullets">
               Implementation and analysis of product trials and testing.
-            </li>
-            <li className=" work__details listWithBullets">
-              Collaboration with IP lawyers to catalogue software specifications
-              informing the patent process.
             </li>
           </ul>
           <h5>Product Management and Customer Experience</h5>
           <ul>
             <li className="work__details listWithBullets">
-              My team and I invented a digital multimedia learning system, which
+              Named inventor on a
               <a
-                href="https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10915821.PN.&OS=PN/10915821&RS=PN/10915821"
+                href="https://patents.google.com/patent/US10915821B2"
                 target="_blank"
                 rel="noreferrer"
               >
                 {' '}
-                went on to be patented
+                patented digital multimedia learning system
               </a>
               .
             </li>
@@ -147,32 +109,22 @@ function CV() {
               interviews, then prioritised software requests for the technical
               team (800+ tickets logged in Jira).
             </li>
+          </ul>
+          <h5>Communication, Client Liaison, and Operations</h5>
+          <ul>
             <li className="work__details listWithBullets">
-              Primary liaison with UX (User Experience) and media / PR
+              Delivered software demonstrations and presentations to clients,
+              including workshops and high-profile stakeholders.
+            </li>
+            <li className="work__details listWithBullets">
+              Managed a team of 4 full-time employees in the studio production
+              facility, improving workflows and overseeing HR-related
+              activities.
+            </li>
+            <li className="work__details listWithBullets">
+              Handled recruitment processes, coaching, performance management,
+              and served as a primary point of contact for clients and UX / PR
               contractors.
-            </li>
-          </ul>
-          <h5>Communication and Client Liaison</h5>
-          <ul>
-            <li className="work__details listWithBullets">
-              Taught and demonstrated software to clients, including public
-              speaking in workshops and presenting to Government ministers,
-              educators, non-profits, and corporate customers.
-            </li>
-            <li className="work__details listWithBullets">
-              Primary liaison with PR contractor, created marketing and
-              copywriting content promoting software.
-            </li>
-          </ul>
-          <h5>HR and Operations</h5>
-          <ul>
-            <li className="work__details listWithBullets">
-              Manager of 4 full-time employees (studio production facility),
-              improved workflows and communicated activities to the CEO.
-            </li>
-            <li className="work__details listWithBullets">
-              Responsible for evaluating CVs, conducting interviews, hiring
-              studio employees, coaching, and performance management.
             </li>
           </ul>
           <br />
@@ -225,10 +177,62 @@ function CV() {
             <strong>
               <p>Enspiral Dev Academy</p>
             </strong>
-            <p className="work__dates spaceBelow">2022</p>
+            <p className="work__dates spaceBelow">January 2022 – May 2022</p>
             <ul>
               <li className="work__details listWithBullets">
-                See Experience section.
+                Enspiral Dev Academy is an intensive, 15-week full-stack
+                bootcamp that emulates a best-practice commercial environment.
+              </li>
+              <li className="work__details listWithBullets">
+                Technologies and skills I learned in this course include:
+              </li>
+              <li className="work__details__indented listWithBullets">
+                JavaScript (ES6).
+              </li>
+              <li className="work__details__indented listWithBullets">
+                React and Redux.
+              </li>
+              <li className="work__details__indented listWithBullets">
+                Server-side development (Node.js, Express.js) and templating
+                (Handlebars.js).
+              </li>
+              <li className="work__details__indented listWithBullets">
+                SQL database design and development (using SQLite3 and Knex.js).
+              </li>
+              <li className="work__details__indented listWithBullets">
+                HTML5 &#38; CSS3
+              </li>
+              <li className="work__details__indented listWithBullets">
+                REST and API architectures (invoking API routes with Insomnia,
+                consuming APIs with Superagent, testing API calls with
+                Supertest).
+              </li>
+              <li className="work__details__indented listWithBullets">
+                Test-driven development (Jest and React Testing Library),
+                distributed version control (Git and GitHub), pair programming,
+                and Agile methodologies.
+              </li>
+              <li className="work__details__indented listWithBullets">
+                Teamwork, giving and receiving feedback, and communication
+                techniques.
+              </li>
+              <li className="work__details listWithBullets">
+                Our final project, SERV., allows customers to post jobs to a
+                board that service businesses can make quotes on. Myself and 4
+                other students built this in 6 days, using React, Redux,
+                Bootstrap, Auth0, and SQLite / Knex.js. As our team&apos;s
+                backend lead, I was responsible for the API, routes, database
+                functions, and some of the business logic.To see the different
+                views of the site for customer and business users, you can view
+                a video demo{' '}
+                <a
+                  href="https://www.youtube.com/watch?v=NvA5cs7Y_vU&list=PL_AE4CqTqcwLHfFLQYKoeaxdU4Q1rod6T&t=906s"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  here
+                </a>
+                .
               </li>
             </ul>
             <br />
