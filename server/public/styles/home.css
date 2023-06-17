@@ -255,6 +255,13 @@
   bottom: 0;
 }
 
+.home__header__text__container {
+  display: flex;
+  flex-direction: column;
+  flex: 2 1 auto;
+  justify-content: space-between;
+}
+
 .home__header__textWrapper {
   padding: 10vh 20vw 0px 20vw;
   min-height: 85vh;
@@ -264,7 +271,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10vh;
+  gap: 5vh;
   z-index: 2;
   position: relative;
 }

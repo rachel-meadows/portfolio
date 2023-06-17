@@ -47,17 +47,20 @@ function Home(props) {
             Hi, I&apos;m{' '}
             <span className="home__header--textShadow">Rachel</span>.
           </h1>
-          <div>
+          <div className="home__header__text__container">
             <h3 className="home__header__text">
-              I&apos;m a junior <strong>full-stack developer</strong>, with 3
-              years experience in a product management and operations role.
+              I&apos;m a junior <strong>full-stack software engineer</strong>.
             </h3>
-            <br></br>
             <h3 className="home__header__text">
-              If you need a developer who&apos;s as happy talking to clients and
-              prioritizing requirements as writing code, let&apos;s{' '}
+              I have commercial experience in C#, .NET and a background in
+              JavaScript. Before transitioning into tech, I spent three years in
+              a product and operations management role.
+            </h3>
+            <h3 className="home__header__text">
+              Looking for a developer who&apos;s fluent in both code and client
+              communication?{' '}
               <Link to={'/contact'}>
-                <strong>have a chat</strong>
+                <strong>Let&apos;s chat</strong>
               </Link>
               .
             </h3>
@@ -101,10 +104,10 @@ function Home(props) {
             },
             particles: {
               color: {
-                value: '#ffffff',
+                value: '#454444',
               },
               links: {
-                color: '#ffffff',
+                color: '#454444',
                 distance: 150,
                 enable: true,
                 opacity: 0.4,
@@ -150,22 +153,6 @@ function Home(props) {
         <div className="home__skills__technical">
           <div className="home__skills__skill">
             <img
-              src="/images/technicalSkills/html.png"
-              className="logo"
-              alt="HTML logo"
-            />
-            <div className="skill__caption">HTML</div>
-          </div>
-          <div className="home__skills__skill">
-            <img
-              src="/images/technicalSkills/css.png"
-              className="logo"
-              alt="CSS logo"
-            />
-            <div className="skill__caption">CSS</div>
-          </div>
-          <div className="home__skills__skill">
-            <img
               src="/images/technicalSkills/js.png"
               className="logo"
               alt="JavaScript logo"
@@ -174,27 +161,27 @@ function Home(props) {
           </div>
           <div className="home__skills__skill">
             <img
+              src="/images/technicalSkills/c-sharp.png"
+              className="logo"
+              alt="C# logo"
+            />
+            <div className="skill__caption">C#</div>
+          </div>
+          <div className="home__skills__skill">
+            <img
+              src="/images/technicalSkills/dotnet.jpg"
+              className="logo"
+              alt="Dot Net logo"
+            />
+            <div className="skill__caption">.NET</div>
+          </div>
+          <div className="home__skills__skill">
+            <img
               src="/images/technicalSkills/sql.png"
               className="logo"
               alt="SQL symbol"
             />
             <div className="skill__caption">SQL</div>
-          </div>
-          <div className="home__skills__skill">
-            <img
-              src="/images/technicalSkills/git.png"
-              className="logo"
-              alt="Git logo"
-            />
-            <div className="skill__caption">Git</div>
-          </div>
-          <div className="home__skills__skill">
-            <img
-              src="/images/technicalSkills/python.png"
-              className="logo"
-              alt="Python logo"
-            />
-            <div className="skill__caption">Python</div>
           </div>
           <div className="home__skills__skill">
             <img
@@ -222,14 +209,6 @@ function Home(props) {
           </div>
           <div className="home__skills__skill">
             <img
-              src="/images/technicalSkills/expressjs.png"
-              className="logo"
-              alt="Express logo"
-            />
-            <div className="skill__caption">Express.JS</div>
-          </div>
-          <div className="home__skills__skill">
-            <img
               src="/images/technicalSkills/nodejs.png"
               className="logo"
               alt="Node.JS logo"
@@ -238,11 +217,35 @@ function Home(props) {
           </div>
           <div className="home__skills__skill">
             <img
-              src="/images/technicalSkills/flask.png"
+              src="/images/technicalSkills/git.png"
               className="logo"
-              alt="Flask logo"
+              alt="Git logo"
             />
-            <div className="skill__caption">Flask</div>
+            <div className="skill__caption">Git</div>
+          </div>
+          <div className="home__skills__skill">
+            <img
+              src="/images/technicalSkills/html.png"
+              className="logo"
+              alt="HTML logo"
+            />
+            <div className="skill__caption">HTML</div>
+          </div>
+          <div className="home__skills__skill">
+            <img
+              src="/images/technicalSkills/css.png"
+              className="logo"
+              alt="CSS logo"
+            />
+            <div className="skill__caption">CSS</div>
+          </div>
+          <div className="home__skills__skill">
+            <img
+              src="/images/technicalSkills/python.png"
+              className="logo"
+              alt="Python logo"
+            />
+            <div className="skill__caption">Python</div>
           </div>
         </div>
         <br></br>
@@ -354,15 +357,15 @@ function Home(props) {
         <div className="home__about__wrapper">
           <div>
             <p className="home__about_text">
-              I have a Psychology BSc(Hons) from the University of Auckland.
-              After spending 3 years working at SaaS eLearning startup, I fell
-              in love with software and retrained as a full-stack web developer
-              at Enspiral Dev Academy.
+              After completing my BSc(Hons) in Psychology, I spent three years
+              working at SaaS eLearning startup. This inspired me to retrain in
+              full-stack development at a course I completed in early 2022.
+              I&apos;ve been working as a software engineer ever since.
             </p>
             <p className="home__about_text">
-              Outside of work, I like learning about text processing and
-              generation, playing Dungeons &#38; Dragons, weightlifting, and
-              hiking. I&apos;m also a volunteer sportsfighting coach.
+              Outside of work, I like gardening, playing tabletop games,
+              powerlifting, and hiking. I&apos;m also a volunteer sportsfighting
+              coach.
             </p>
             <p className="home__about_text">
               <em>
